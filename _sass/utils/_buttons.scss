@@ -1,0 +1,96 @@
+/* ---------- BUTTONS ---------- */
+.btn {
+  padding: 8px 17px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.5;
+  vertical-align: middle; //you don't need this if html element is a button
+  white-space: nowrap; //fa si che il testo nn vada a capo
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  @include user-select(none);
+  outline-width: 0;
+  transition: all .5s ease;
+
+  //use btn btn--default in html
+  @include modifier('default'){
+    border: 1px solid $lightgrey;
+    background-color: $whiteflat;
+      &:hover {
+        border: 1px solid $lightgrey;
+        background-color: $lightergrey;
+        color: black;
+      }
+  }
+
+  //use btn btn--primary in html
+  @include modifier('primary'){
+    border: 1px solid #2980B9;
+    background-color: #3498DB;
+    color: $whiteflat;
+      &:hover {
+        border: 1px solid #34495E;
+        background-color: #2980B9;
+        color: $whiteflat;
+      }
+  }
+
+  //use btn btn--success in html
+  @include modifier('success'){
+    border: 1px solid #16A085;
+    background-color: #1ABC9C;
+    color: $white;
+      &:hover {
+        border: 1px solid #159881;
+        background-color: #16A085;
+        color: $whiteflat;
+      }
+  }
+
+  //use btn btn--warning in html
+  @include modifier('warning'){
+    border: 1px solid #E67E22;
+    background-color: #F39C12;
+    color: $white;
+      &:hover {
+        border: 1px solid #D35400;
+        background-color: #E67E22;
+        color: $white;
+      }
+  }
+
+  //use btn btn--alert in html
+  @include modifier('alert'){
+    border: 1px solid #C0392B;
+    background-color: #E74C3C;
+    color: $white;
+      &:hover {
+        border: 1px solid #B83529;
+        background-color: #C0392B;
+        color: $whiteflat;
+      }
+  }
+
+
+
+  /* You can change the color of the variables
+  * $btncolorcustom   for the front color
+  * $btncolorcustom-hover   for the hover color
+  */
+  .btn-custom-color {
+    @extend.btn;
+    border: 1px solid #{$btncolorcustom-hover};
+    background-color: #{$btncolorcustom};
+    color: $whiteflat;
+
+    &:hover {
+      border: 1px solid #{$btncolorcustom-hover};
+      background-color: #{$btncolorcustom-hover};
+      color: $whiteflat;
+    }
+  }
+}

@@ -37,3 +37,46 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+
+// Import my framework
+
+@import
+// -------------------------------------
+//   SUSY GRID // Comment 'base/_grid' if yoo don't use it
+// -------------------------------------
+'susy/susy',
+'themes/susyConf', //config with your settings
+// -------------------------------------
+//   BASE // Should not be modified
+// -------------------------------------
+'base/_normalise',
+'base/_grid',
+'base/_print',
+'base/_code',
+// -------------------------------------
+//   FOUNDATION
+// -------------------------------------
+'foundation/_config',
+'themes/_colors.override',
+'foundation/_base',
+// -------------------------------------
+//   MIXINS
+// -------------------------------------
+'mixins/_breakpoints',
+'mixins/_bem',
+'mixins/_utilities',
+'mixins/_typography',
+// -------------------------------------
+//   UTILS
+// -------------------------------------
+'utils/_helpers',
+'utils/_buttons',
+'utils/_images',
+// -------------------------------------
+//   VENDORS
+// -------------------------------------
+// -------------------------------------
+//   THEMES
+// -------------------------------------
+'themes/_style';

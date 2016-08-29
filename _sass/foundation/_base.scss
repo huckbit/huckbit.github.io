@@ -1,0 +1,122 @@
+// *************************************
+//
+//   Base-level tags
+//   -> All font related styling -
+//   -> generated with gridlover.net
+//
+// *************************************
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    outline: none;
+}
+
+html {
+    // @include font-family("default");
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25em;
+  line-height: 1.55em;
+  max-width: 1400px;
+  padding: 1.55em;
+  margin: 0 auto;
+}
+h1 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 5em;
+  line-height: 1.24em;
+  margin-top: 0.31em;
+  margin-bottom: 0em;
+}
+h2 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 2.95em;
+  line-height: 1.0508474576271185em;
+  margin-top: 0.5254237288135593em;
+  margin-bottom: 0.5254237288135593em;
+}
+h3 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.7em;
+  line-height: 1.823529411764706em;
+  margin-top: 0.911764705882353em;
+  margin-bottom: 0em;
+}
+h4 {
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1em;
+  line-height: 1.55em;
+  margin-top: 1.55em;
+  margin-bottom: 0em;
+}
+h5 {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.55em;
+  margin-top: 1.55em;
+  margin-bottom: 0em;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0em;
+  margin-bottom: 1.55em;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+hr {
+  visibility: hidden;
+  margin: 5% 0 6% 0;
+    &::before {
+      visibility: visible;
+      content: '***';
+      text-align: center;
+      display: block;
+      letter-spacing: 0.125em;
+    }
+}
+
+pre {
+    padding: 12px;
+    border-top: 1px dotted #bfbfbf;
+    border-bottom: 1px dotted #bfbfbf;
+    font-family: monospace,serif;
+    font-size: 0.8em;
+}
+
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+a {
+  color: #268ED9;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

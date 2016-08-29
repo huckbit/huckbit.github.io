@@ -1,0 +1,152 @@
+// *************************************
+/**
+ * A series of helper classes to use arbitrarily. Only use a helper class if an
+ * element/component doesn’t already have a class to which you could apply this
+ * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+ * that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+ * A lot of these classes carry `!important` as you will always want them to win
+ * out over other selectors.
+ */
+// *************************************
+
+
+// -------------------------------------
+//   Image utilities
+// -------------------------------------
+
+.responsive-img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+// -------------------------------------
+//   Clearfix
+// -------------------------------------
+
+.clearfix {
+    &:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
+
+
+// -------------------------------------
+//   Add/remove floats
+// -------------------------------------
+
+.float--right   { float:right; }
+.float--left    { float:left ; }
+.float--none    { float:none ; }
+
+
+// -------------------------------------
+//   Text alignment
+// ------------------------------------
+
+.text--left     { text-align:left; }
+.text--center   { text-align:center; }
+.text--right    { text-align:right; }
+.text--justify  { text-align:justify; }
+
+
+// -------------------------------------
+//   Font weights
+// -------------------------------------
+
+.weight--light      { font-weight:300; }
+.weight--normal     { font-weight:400; }
+.weight--semibold   { font-weight:600; }
+
+
+// -------------------------------------
+//   List styles
+// -------------------------------------
+
+.list {
+  @include modifier('inline') {
+    display: inline;
+  }
+
+  @include modifier('unstyled') {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.horizzontal-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+    @include element('item'){
+      display:inline;
+    }
+}
+
+
+// -------------------------------------
+//   Link styles
+// -------------------------------------
+
+.link {
+  text-decoration: none;
+  transition: all .3s ease;
+    &:link {
+      color: $link-color;
+    }
+    &:visited {
+      color: $visited-color;
+    }
+    &:hover {
+      color: $hover-color;
+    }
+    &:active {
+      color: $active-color;
+    }
+}
+
+// -------------------------------------
+//   Utils for buttons
+// -------------------------------------
+
+@mixin user-select($userSelect) {
+ -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+}
+
+// -------------------------------------
+//   Add/remove margins
+// -------------------------------------
+
+.push           { margin:       $base-spacing-unit!important; }
+.push--top      { margin-top:   $base-spacing-unit!important; }
+.push--right    { margin-right: $base-spacing-unit!important; }
+.push--bottom   { margin-bottom:$base-spacing-unit!important; }
+.push--left     { margin-left:  $base-spacing-unit!important; }
+.push--ends     { margin-top:   $base-spacing-unit!important; margin-bottom:$base-spacing-unit!important; }
+.push--sides    { margin-right: $base-spacing-unit!important; margin-left:  $base-spacing-unit!important; }
+
+.push-half          { margin:       $half-spacing-unit!important; }
+.push-half--top     { margin-top:   $half-spacing-unit!important; }
+.push-half--right   { margin-right: $half-spacing-unit!important; }
+.push-half--bottom  { margin-bottom:$half-spacing-unit!important; }
+.push-half--left    { margin-left:  $half-spacing-unit!important; }
+.push-half--ends    { margin-top:   $half-spacing-unit!important; margin-bottom:$half-spacing-unit!important; }
+.push-half--sides   { margin-right: $half-spacing-unit!important; margin-left:  $half-spacing-unit!important; }
+
+.flush          { margin:       0!important; }
+.flush--top     { margin-top:   0!important; }
+.flush--right   { margin-right: 0!important; }
+.flush--bottom  { margin-bottom:0!important; }
+.flush--left    { margin-left:  0!important; }
+.flush--ends    { margin-top:   0!important; margin-bottom:0!important; }
+.flush--sides   { margin-right: 0!important; margin-left:  0!important; }

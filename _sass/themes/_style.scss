@@ -1,0 +1,144 @@
+// -------------------------------------
+//   THEME/PAGE STYLE
+// -------------------------------------
+
+
+/**============================================================
+   sidebar nav style
+  ============================================================= */
+.side-nav {
+  height: 100%;
+  width: 200px;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: -200px;
+  background-color: #2C3E50;
+  overflow-x: hidden; //Disable orizzontal scroll
+  visibility: hidden;
+  transition: all 300ms linear;
+}
+.side-nav--show{
+  transform: translateX(200px);
+  visibility: visible;
+}
+
+.menu {
+  padding-top: span(1 of 12);
+  
+  font-weight: 100;
+  text-align: left;
+}
+
+.main {
+  @include span(10 of 12);
+  @include push(1 of 12);
+  transition: margin-left 300ms linear;
+}
+
+.main--show{
+  margin-left: 300px;
+}
+
+.main-content {
+  padding-top: span(.5 of 12);
+}
+.left-content {
+  img {
+    @include span(3 of 12);
+    margin-top: span(.4 of 12);
+  }
+  p{
+    @include span (9 of 12 at 4);
+  }
+}
+
+
+/**============================================================
+   hamburger button style
+  ============================================================= */
+.hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transform: scale(.5);
+  transition: background 0.3s;
+  &:focus {
+    outline: none;
+  }
+  span {
+    display: block;
+    position: absolute;
+    top: 44px;
+    left: 18px;
+    right: 18px;
+    height: 8px;
+    background: white;
+    &::before, &::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: #fff;
+      content: "";
+    }
+    &::before {
+      top: -20px;
+    }
+    &::after {
+      top: 20px;
+    }
+  }
+}
+
+.hamburger-x {
+  background: $blue;
+  &:hover {
+    background: $grey;
+  }
+  span {
+    transition: background 0s 0.2s ease;
+    &::before, &::after{
+      transition-duration: 0.3s, 0.2s;
+      transition-delay: 0.2s, 0s;
+    }
+    &::before {
+      transition-property: top, transform;
+    }
+    &::after {
+      transition-property: bottom, transform;
+    }
+  }
+  &.is-active {
+    background-color: #E74C3C;
+    span {
+      background: none;
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &::after {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+      &::before, &::after {
+        transition-delay: 0s, 0.2s;
+      }
+    }
+  }
+  @include modifier('left') {
+    left: -10%;
+  }
+}
