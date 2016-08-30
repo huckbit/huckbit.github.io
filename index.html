@@ -4,17 +4,17 @@ layout: default
 
 <div class="home">
 
-  <ul class="post-list">
+  <ul class="post-loop list--unstyled">
     {% for post in site.posts %}
       <li>
-        <h2 class="post__title">
-          <a class="link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        <h2 class="post-loop__title">
+          <a class="link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords: 5 | escape }}</a>
         </h2>
-        <span class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-loop__meta">&#xf073; {{ post.date | date: "%b %-d, %Y" }}</span>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe text--right">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

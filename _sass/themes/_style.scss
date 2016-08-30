@@ -2,10 +2,28 @@
 //   THEME/PAGE STYLE
 // -------------------------------------
 
-//@include link-colors($white, $white, $white, $lightgrey, $lightgrey);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Bebas|Contrail+One|Radley|Goudy+Bookletter+1911|Judson);
+
+
+/**============================================================
+   General style
+  ============================================================= */
+// * {
+//   border: 1px dotted green;
+// }
 
 body {
   overflow-x: hidden; //Disable orizzontal scroll
+  background: #fafafa;
+  font-family: 'Playfair Display',fontAwesome, Helvetica, Arial, sans-serif;
+  color: $sitecol-1;
+}
+
+.link {
+  //link--white
+  @include modifier('white'){
+    @include linx($white, $white, $lightgrey, $lightgrey);
+  }
 }
 
 /**============================================================
@@ -18,8 +36,7 @@ body {
   z-index: 1;
   top: 0;
   left: -200px;
-  background-color: #000;
-  //overflow-x: hidden; //Disable orizzontal scroll
+  background-color: $sitecol-3;
   visibility: hidden;
   transition: all 300ms linear;
 }
@@ -32,9 +49,13 @@ body {
   padding-top: span(1 of 12);
   font-weight: 100;
   text-align: left;
+
+  //menu__item
   @include element('item') {
     padding: 5px 0px 5px 10px;
+    font-family: 'Bebas', sans-serif;
   }
+
 }
 
 .main {
@@ -47,18 +68,7 @@ body {
   margin-left: 300px;
 }
 
-.main-content {
-  padding-top: span(.5 of 12);
-}
-.left-content {
-  img {
-    @include span(3 of 12);
-    margin-top: span(.4 of 12);
-  }
-  p{
-    @include span (9 of 12 at 4);
-  }
-}
+
 
 
 /**============================================================
@@ -111,15 +121,15 @@ body {
 }
 
 .hamburger-x {
-  background: $blue;
+  background: $sitecol-2;
   &:hover {
     background: $grey;
   }
   span {
-    transition: background 0s 0.2s ease;
+    transition: background 0s 200ms ease;
     &::before, &::after{
-      transition-duration: 0.3s, 0.2s;
-      transition-delay: 0.2s, 0s;
+      transition-duration: 300ms, 200ms;
+      transition-delay: 200ms, 0s;
     }
     &::before {
       transition-property: top, transform;
@@ -141,13 +151,16 @@ body {
         transform: rotate(-45deg);
       }
       &::before, &::after {
-        transition-delay: 0s, 0.2s;
+        transition-delay: 0s, 200ms;
       }
     }
   }
+
+  //hamburger-x--left
   @include modifier('left') {
     left: -10%;
   }
+
 }
 
 
@@ -159,24 +172,71 @@ body {
   @include push(1);
 }
 
-.page-heading {
-  font-size: 3em;
-}
-
-.post {
+.post-loop {
+  //post-loop__title
   @include element('title'){
-    //style for the post--title
+    font-family: 'Bebas', sans-serif;
+    color: #F43059;
+    margin-bottom: 2%;
+    font-size: 3em;
   }
+  //post-loop__meta
   @include element('meta'){
     //style fot the post--meta
     font-size: .8em;
+    padding-left: 1%;
   }
 }
 
+.rss-subscribe {
+  margin-top: 3%;
+}
+
+
 /**============================================================
-   Post style
+   Post page style
   ============================================================= */
-.content{
-  @include span(8);
-  @include push(2);
+
+.post {
+  //post__title
+  @include element('title'){
+    font-family: 'Bebas', sans-serif;
+    color: #F43059;
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+    font-size: 5em;
+  }
+  //post__subtitle
+  @include element('subtitle'){
+    padding-left: 1%;
+    font-size: 3em;
+    line-height: 1em;
+  }
+
+  //post__date
+  @include element('date'){
+    font-size: 1em;
+    line-height: .1em;
+    padding-left: 1%;
+  }
+
+  //post__content
+  @include element('content'){
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+}
+
+.related {
+  border-top: 1px dotted $lightgrey;
+  font-size: 1.5em;
+}
+
+
+/**============================================================
+   page style
+  ============================================================= */
+.page {
+  @include span(10);
+  @include push(1);
 }

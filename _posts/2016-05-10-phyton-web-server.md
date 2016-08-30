@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Add phython web server in the fly to your project"
+title:  "Phython web server"
+subtitle:  "Web server on the fly"
 date:   2016-05-10 19:00:00 +0100
 categories: osx
 ---
