@@ -2187,13 +2187,11 @@ body {
   letter-spacing: 1px;
   font-size: 5em; }
 .post__subtitle {
-  padding-left: 1%;
   font-size: 3em;
   line-height: 1em; }
 .post__date {
   font-size: 1em;
-  line-height: .1em;
-  padding-left: 1%; }
+  line-height: .1em; }
 .post__content {
   margin-top: 5%;
   margin-bottom: 10%; }
