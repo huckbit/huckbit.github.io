@@ -1,3 +1,3 @@
 # My blog site
 
-No content inside, just work in progress for custom theme.
+No real content inside... work in progress for custom Jekyll theme.
