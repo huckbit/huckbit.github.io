@@ -6,28 +6,12 @@
     <title>{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <div class="side-nav">
-        <ul class="menu list--unstyled">
-            <a class="link" href="/">Home</a>
-            {% assign pages_list = site.pages %}
-              {% for node in pages_list %}
-                {% if node.title != null %}
-                  {% if node.layout == "page" %}
-            <li>
-                <a class="link" href="{{ node.url }}">{{ node.title }}</a>
-            </li>
-                  {% endif %}
-              {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
-
     <div class="main">
         <button class="hamburger hamburger-x hamburger-x--left">
             <span>toggle menu</span>
         </button>
-        <!-- <div class="site--name link text--right">{{ site.title }}</div> -->
+        <!-- <div class="site--name link text--left">{{ site.title }}</div> -->

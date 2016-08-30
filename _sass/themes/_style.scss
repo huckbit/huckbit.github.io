@@ -2,6 +2,11 @@
 //   THEME/PAGE STYLE
 // -------------------------------------
 
+//@include link-colors($white, $white, $white, $lightgrey, $lightgrey);
+
+body {
+  overflow-x: hidden; //Disable orizzontal scroll
+}
 
 /**============================================================
    sidebar nav style
@@ -13,8 +18,8 @@
   z-index: 1;
   top: 0;
   left: -200px;
-  background-color: #2C3E50;
-  overflow-x: hidden; //Disable orizzontal scroll
+  background-color: #000;
+  //overflow-x: hidden; //Disable orizzontal scroll
   visibility: hidden;
   transition: all 300ms linear;
 }
@@ -25,9 +30,11 @@
 
 .menu {
   padding-top: span(1 of 12);
-  
   font-weight: 100;
   text-align: left;
+  @include element('item') {
+    padding: 5px 0px 5px 10px;
+  }
 }
 
 .main {
@@ -141,4 +148,35 @@
   @include modifier('left') {
     left: -10%;
   }
+}
+
+
+/**============================================================
+   home page blog
+  ============================================================= */
+.home {
+  @include span(10);
+  @include push(1);
+}
+
+.page-heading {
+  font-size: 3em;
+}
+
+.post {
+  @include element('title'){
+    //style for the post--title
+  }
+  @include element('meta'){
+    //style fot the post--meta
+    font-size: .8em;
+  }
+}
+
+/**============================================================
+   Post style
+  ============================================================= */
+.content{
+  @include span(8);
+  @include push(2);
 }
