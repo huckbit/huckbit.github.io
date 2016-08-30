@@ -139,7 +139,7 @@ body {
     }
   }
   &.is-active {
-    background-color: #E74C3C;
+    background-color: $sitecol-3;
     span {
       background: none;
       &::before {
