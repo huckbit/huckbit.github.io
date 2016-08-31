@@ -24,6 +24,7 @@ $secondFontStyle: 'Bebas', fontAwesome, Helvetica, Arial, sans-serif;
 // }
 
 body {
+  height: 100vh;
   overflow-x: hidden; //Disable orizzontal scroll
   background: #fafafa;
   font-family: $firstFontStyle;
@@ -36,6 +37,29 @@ body {
     @include linx($white, $white, $lightgrey, $lightgrey);
   }
 }
+
+/**============================================================
+   header style
+  ============================================================= */
+.header-nav {
+  //header-nav__menu
+  @include element('menu'){
+    margin-top: -65px;
+    //header-nav__menu--home
+    @include modifier('home'){
+      font-size: 1.4em;
+      &::before {
+        content: "[ ";
+        color: $sitecol-2;
+      }
+      &::after {
+        content: " ]";
+        color: $sitecol-2;
+      }
+    }
+  }
+}
+
 
 /**============================================================
    sidebar nav style
@@ -183,6 +207,7 @@ body {
 }
 
 .post-loop {
+  margin-top: 7%;
   //post-loop__title
   @include element('title'){
     font-family: $secondFontStyle;
@@ -214,19 +239,21 @@ body {
     color: #F43059;
     letter-spacing: 1px;
     font-size: 5em;
-    margin: 0;
+    margin-top: 7%;
   }
   //post__subtitle
   @include element('subtitle'){
     font-size: 3em;
     margin:0;
     line-height: 1.2em;
+    color: $sitecol-2;
   }
 
   //post__date
   @include element('meta'){
     line-height: 1.8em;
     font-size: 1em;
+    color: $sitecol-2;
   }
 
   //post__date
@@ -297,6 +324,7 @@ body {
 footer{
   @include full;
   margin-bottom: 2%;
+  margin-top:5%;
 }
 .copyright {
   font-size: .8em;
