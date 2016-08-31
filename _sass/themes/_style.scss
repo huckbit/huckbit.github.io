@@ -231,9 +231,29 @@ body {
   }
 }
 
-.related {
+.related-post {
   border-top: 1px dotted $lightgrey;
   font-size: 1.5em;
+  margin-bottom: 10%;
+
+  //related-post__list
+  @include element('list'){
+    line-height: .5em;
+  }
+
+  //related-post__item
+  @include element('item') {
+    h4 {
+      margin: 0;
+      line-height: 1.2em;
+    }
+    small {
+      color: $sitecol-2;
+      &::before {
+        content: "- "
+      }
+    }
+  }
 }
 
 
