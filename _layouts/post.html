@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
+
 <div class="page">
+
+<!-- post section -->
   <div class="post">
     <h1 class="post__title">{{ page.title }}</h1>
     <h2 class="post__subtitle">{{ page.subtitle }}</h2>
@@ -12,11 +15,12 @@ layout: default
   </div>
 
 
+<!-- disquis section -->
   <div id="disqus_thread"></div>
-
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
+<!-- related-post seciton -->
   <div class="related-post">
     <h2>Related Posts</h2>
     <ul class="related-posts__list list--unstyled">
@@ -32,4 +36,5 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-</div>
+
+</div><!-- ./page -->

@@ -1,5 +1,5 @@
 // -------------------------------------
-//   THEME/PAGE STYLE
+//   Theme variables
 // -------------------------------------
 
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Radley);
@@ -11,6 +11,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+$firstFontStyle: 'Playfair Display',fontAwesome, Helvetica, Arial, sans-serif;
+$secondFontStyle: 'Bebas', fontAwesome, Helvetica, Arial, sans-serif;
+
+
 /**============================================================
    General style
   ============================================================= */
@@ -21,7 +26,7 @@
 body {
   overflow-x: hidden; //Disable orizzontal scroll
   background: #fafafa;
-  font-family: 'Playfair Display',fontAwesome, Helvetica, Arial, sans-serif;
+  font-family: $firstFontStyle;
   color: $sitecol-1;
 }
 
@@ -59,7 +64,7 @@ body {
   //menu__item
   @include element('item') {
     padding: 5px 0px 5px 10px;
-    font-family: 'Bebas', sans-serif;
+    font-family: $secondFontStyle;
   }
 
 }
@@ -180,7 +185,7 @@ body {
 .post-loop {
   //post-loop__title
   @include element('title'){
-    font-family: 'Bebas', sans-serif;
+    font-family: $secondFontStyle;
     color: #F43059;
     margin-bottom: 2%;
     font-size: 3em;
@@ -205,16 +210,17 @@ body {
 .post {
   //post__title
   @include element('title'){
-    font-family: 'Bebas', sans-serif;
+    font-family: $secondFontStyle;
     color: #F43059;
-    margin-bottom: 2%;
     letter-spacing: 1px;
     font-size: 5em;
+    margin: 0;
   }
   //post__subtitle
   @include element('subtitle'){
     font-size: 3em;
-    line-height: 1em;
+    margin:0;
+    line-height: 2em;
   }
 
   //post__date
@@ -231,9 +237,15 @@ body {
 }
 
 .related-post {
-  border-top: 1px dotted $lightgrey;
+  border-top: 2px solid #E7E9EE;
+  margin-top: 7px;
+  padding-top: 3%;
   font-size: 1.5em;
   margin-bottom: 10%;
+  h2 {
+    margin: 0;
+    line-height: 1.8em;
+  }
 
   //related-post__list
   @include element('list'){
@@ -244,10 +256,13 @@ body {
   @include element('item') {
     h4 {
       margin: 0;
-      line-height: 1.2em;
+      line-height: 1.5em;
+      font-family: $secondFontStyle;
     }
     small {
+      font-family: $firstFontStyle;
       color: $sitecol-2;
+      vertical-align: middle;
       &::before {
         content: "- "
       }
