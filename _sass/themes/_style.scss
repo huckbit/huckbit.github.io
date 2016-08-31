@@ -278,3 +278,16 @@ body {
   @include span(10);
   @include push(1);
 }
+
+
+/**============================================================
+   footer style
+  ============================================================= */
+footer{
+  @include full;
+  margin-bottom: 2%;
+}
+.copyright {
+  font-size: .8em;
+  color: $lightgrey;
+}
