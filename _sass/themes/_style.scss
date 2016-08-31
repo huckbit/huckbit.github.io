@@ -2,9 +2,15 @@
 //   THEME/PAGE STYLE
 // -------------------------------------
 
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Bebas|Contrail+One|Radley|Goudy+Bookletter+1911|Judson);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Radley);
 
-
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../public/fonts/bebas-webfont.woff2') format('woff2'),
+         url('../public/fonts/bebas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /**============================================================
    General style
   ============================================================= */
