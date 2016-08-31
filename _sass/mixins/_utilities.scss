@@ -83,3 +83,31 @@
   }
 
 }
+
+/* ===========================================
+    vendor prefixes for keyframes animation
+   ===========================================
+    example:
+
+      @include keyframes(animation_name) {
+        0%, 100% {transform: rotate(0)}
+        50% {transform: rotate(360deg);}
+      }
+
+   =========================================== */
+
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+      @content;
+  }
+  @-moz-keyframes #{$name} {
+      @content;
+  }
+  @-ms-keyframes #{$name} {
+      @content;
+  }
+  @keyframes #{$name} {
+      @content;
+  }
+}
