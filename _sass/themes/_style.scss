@@ -48,14 +48,25 @@ body {
     //header-nav__menu--home
     @include modifier('home'){
       font-size: 1.4em;
+      &::before, &::after{
+        position: relative;
+        color: $sitecol-2;
+        transition: all 500ms ease;
+      }
       &::before {
         content: "[ ";
-        color: $sitecol-2;
       }
       &::after {
         content: " ]";
-        color: $sitecol-2;
       }
+      &:hover::before, &:hover::after{
+        color: $sitecol-3;
+        margin: 0 3px;
+      }
+
+      // &:hover::after{
+      //   color: $sitecol-3;
+      // }
     }
   }
 }
@@ -256,8 +267,9 @@ body {
     color: $sitecol-2;
   }
 
-  //post__date
+  //post__author
   @include element('author'){
+    line-height: 2.2em;
   }
 
   //post__date

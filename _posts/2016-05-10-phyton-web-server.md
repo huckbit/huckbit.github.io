@@ -23,7 +23,7 @@ This feature is very useful when you are working in local host with a browser th
 inserted the alias inside the `.bash_profile`, refresh with the following command:
 
 {% highlight ruby %}
-$ source ~/.bash_profile
+    $ source ~/.bash_profile
 {% endhighlight %}
 
 inside your project folder you just type `$ server` to open your web server.
