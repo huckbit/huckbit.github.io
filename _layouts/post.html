@@ -8,10 +8,13 @@ layout: default
   <div class="post">
     <h1 class="post__title">{{ page.title }}</h1>
     <h2 class="post__subtitle">{{ page.subtitle }}</h2>
-    <p class="post__date">{{ page.date | date_to_string }}</p>
+    <p class="post__meta post__author">
+      posted from: <a class="link" href="{{site.baseurl}}/about">{{page.author.display_name}} </a><span class="post__meta post__date">{{ page.date | date_to_string }}</span>
+    </p>
     <div class="post__content">
       {{ content }}
     </div>
+
   </div>
 
 

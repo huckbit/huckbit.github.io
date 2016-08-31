@@ -2,6 +2,11 @@
 layout: post
 title:  "Phython web server"
 subtitle:  "Web server on the fly"
+author:
+  display_name: huckbit
+  login: huckbit
+  email: info@huckbit.com
+  url: http://www.huckbit.com
 date:   2016-05-10 19:00:00 +0100
 categories: osx
 ---

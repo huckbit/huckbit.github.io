@@ -220,18 +220,29 @@ body {
   @include element('subtitle'){
     font-size: 3em;
     margin:0;
-    line-height: 2em;
+    line-height: 1.2em;
+  }
+
+  //post__date
+  @include element('meta'){
+    line-height: 1.8em;
+    font-size: 1em;
+  }
+
+  //post__date
+  @include element('author'){
   }
 
   //post__date
   @include element('date'){
-    font-size: 1em;
-    line-height: .1em;
+    &::before {
+      content: " - "
+    }
   }
 
   //post__content
   @include element('content'){
-    margin-top: 5%;
+    margin-top: 7%;
     margin-bottom: 10%;
   }
 }
