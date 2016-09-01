@@ -105,7 +105,7 @@ a{
     // }
   //breakpoint mobile -- version two
     @include breakpoint($mobile){
-      width: 150px;
+      //no style needed
     }
 }
 .side-nav--show{
@@ -168,7 +168,7 @@ a{
 
   //breakpoint mobile -- version two (no version one for this class)
     @include breakpoint($mobile){
-      margin-left: 150px;
+      margin-left: 180px;
     }
 
 }
