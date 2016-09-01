@@ -39,7 +39,7 @@ a{
 .link {
   //link--white
   @include modifier('white'){
-    @include linx($white, $white, $lightgrey, $lightgrey);
+    @include linx($white, $white, $sitecol-2, $sitecol-2);
   }
 }
 
@@ -87,7 +87,7 @@ a{
   z-index: 1;
   top: 0;
   left: -200px;
-  background-color: $sitecol-3;
+  background-color: $sitecol-2;
   visibility: hidden;
   transition: all 300ms linear;
 }
@@ -104,7 +104,17 @@ a{
   //menu__item
   @include element('item') {
     padding: 5px 0px 5px 10px;
-    font-family: $secondFontStyle;
+    font-family: $firstFontStyle;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-transform: lowercase;
+    transition: all 500ms ease;
+    &:hover{
+      background: $sitecol-3;
+      a{
+        padding-left: 10px;
+      }
+    }
   }
 
 }
@@ -334,6 +344,7 @@ a{
 .page {
   @include span(8);
   @include push(2);
+  height: 70vh;
   @include element('title'){
     color: $sitecol-2;
     margin-bottom: 3%;

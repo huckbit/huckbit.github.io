@@ -1,15 +1,15 @@
 <div class="side-nav">
     <ul class="menu list--unstyled">
         <li class="menu__item"><a class="link link--white" href="/">Home</a></li>
-        {% assign pages_list = site.pages %}
-          {% for node in pages_list %}
+        {% assign sorted_pages = site.pages | sort:"order" %}
+          {% for node in sorted_pages %}
             {% if node.title != null %}
               {% if node.layout == "page" %}
         <li class="menu__item">
             <a class="link link--white" href="{{ node.url }}">{{ node.title }}</a>
         </li>
               {% endif %}
-          {% endif %}
+            {% endif %}
         {% endfor %}
     </ul>
 </div>
