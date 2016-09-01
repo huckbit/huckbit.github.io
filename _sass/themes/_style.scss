@@ -126,6 +126,7 @@ a{
     font-weight: lighter;
     text-transform: lowercase;
     transition: all 500ms ease;
+
     //breakpoint mobile -- version one
       // @include breakpoint($mobile){
       //   text-align: center;
@@ -133,11 +134,11 @@ a{
       //   padding: 6px 0;
       //   font-size: 1.2em;
       // }
+
     //breakpoint mobile -- version two
       @include breakpoint($mobile){
-        text-align: center;
         margin: 0;
-        padding: 2px;
+        padding: 2px 5px;
         font-size: .8em;
       }
     &:hover{
@@ -164,19 +165,26 @@ a{
 
 .main--show{
   margin-left: 300px;
+
   //breakpoint mobile -- version two (no version one for this class)
     @include breakpoint($mobile){
       margin-left: 150px;
     }
+
 }
 
 .social-side-nav {
   margin-top: 20%;
   margin-left: 3%;
-  //breakpoint mobile
+  //breakpoint mobile -- version one
+    // @include breakpoint($mobile){
+    //   text-align: center;
+    // }
+  //breakpoint mobile -- version two
     @include breakpoint($mobile){
-      text-align: center;
+      text-align: left;
     }
+
   //social-side-nav__item
   @include element('item'){
     padding-right: 5px;
@@ -315,6 +323,10 @@ a{
 
 .post-loop {
   margin-top: 7%;
+  //breakpoint mobile
+    @include breakpoint($mobile){
+      margin-top: 25%;
+    }
   //post-loop__title
   @include element('title'){
     font-family: $secondFontStyle;
@@ -358,6 +370,7 @@ a{
     //breakpoint mobile
       @include breakpoint($mobile){
         font-size: 2em;
+        margin-bottom: 10%;
       }
   }
   @include element('content'){
@@ -387,6 +400,7 @@ a{
     //breakpoint mobile
       @include breakpoint($mobile){
         font-size: 1.5em;
+        margin-top: 15%;
       }
   }
   //post__subtitle
