@@ -17,7 +17,7 @@ title: huckbit blog site
 name: huckbit
 email: info@huckbit.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Max and I'm a *web developer*. I'm from Rome and I'm based on the Isle of Wight, where I live with my love Maria Livia. We do love cats and we would like to have one in the future ... or maybe two :-)
+  Hi, I'm Max and I'm a web developer. I'm from Rome and I'm based on the Isle of Wight.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: huckbit

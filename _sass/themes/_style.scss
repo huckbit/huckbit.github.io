@@ -2,8 +2,7 @@
 //   Theme variables
 // -------------------------------------
 
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Radley);
-
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900|Radley);
 @font-face {
     font-family: 'Bebas';
     src: url('../public/fonts/bebas-webfont.woff2') format('woff2'),
@@ -104,6 +103,7 @@ a{
   //menu__item
   @include element('item') {
     padding: 7px 0px 7px 10px;
+    margin-top: 0;
     font-family: $firstFontStyle;
     font-size: 1em;
     font-weight: lighter;
@@ -125,7 +125,6 @@ a{
   background: $sitecol-3;
 }
 
-
 .main {
   @include span(10 of 12);
   @include push(1 of 12);
@@ -136,9 +135,22 @@ a{
   margin-left: 300px;
 }
 
-
-
-
+.social-side-nav{
+  margin-top: 5%;
+  margin-left: 5%;
+  //social-side-nav__item
+  @include element('item'){
+    padding-right: 5px;
+    //social-side-nav__item--last
+    @include modifier('last'){
+      padding-right: 0;
+    }
+    @include modifier('description'){
+      color: $white;
+      font-size: .8em;
+    }
+  }
+}
 /**============================================================
    hamburger button style
   ============================================================= */
