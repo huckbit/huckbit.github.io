@@ -119,6 +119,13 @@ a{
 
 }
 
+/* this class is for the active element inside menu 
+(jekyll function inside sidebar page ) */
+.active {
+  background: $sitecol-3;
+}
+
+
 .main {
   @include span(10 of 12);
   @include push(1 of 12);
