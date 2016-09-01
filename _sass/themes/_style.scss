@@ -102,6 +102,10 @@ a{
     @include breakpoint($mobile){
       width: 100vw;
     }
+  //breakpoint mobile -- version two
+    // @include breakpoint($mobile){
+    //   width: 150px;
+    // }
 }
 .side-nav--show{
   transform: translateX(200px);
@@ -125,9 +129,16 @@ a{
       @include breakpoint($mobile){
         text-align: center;
         margin: 0;
-        padding: 10px 0;
+        padding: 6px 0;
         font-size: 1.2em;
       }
+    //breakpoint mobile -- version two
+      // @include breakpoint($mobile){
+      //   text-align: center;
+      //   margin: 0;
+      //   padding: 2px;
+      //   font-size: .6em;
+      // }
     &:hover{
       background: $sitecol-3;
       a{
@@ -152,6 +163,10 @@ a{
 
 .main--show{
   margin-left: 300px;
+  //breakpoint mobile version two
+    // @include breakpoint($mobile){
+    //   margin-left: 150px;
+    // }
 }
 
 .social-side-nav {
