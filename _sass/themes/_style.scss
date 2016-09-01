@@ -103,9 +103,9 @@ a{
 
   //menu__item
   @include element('item') {
-    padding: 5px 0px 5px 10px;
+    padding: 7px 0px 7px 10px;
     font-family: $firstFontStyle;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: lighter;
     text-transform: lowercase;
     transition: all 500ms ease;
@@ -119,7 +119,7 @@ a{
 
 }
 
-/* this class is for the active element inside menu 
+/* this class is for the active element inside menu
 (jekyll function inside sidebar page ) */
 .active {
   background: $sitecol-3;
