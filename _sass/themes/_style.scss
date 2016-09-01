@@ -98,14 +98,15 @@ a{
   background-color: $sitecol-2;
   visibility: hidden;
   transition: all 300ms linear;
-  //breakpoint mobile
-    @include breakpoint($mobile){
-      width: 100vw;
-    }
-  //breakpoint mobile -- version two
+  //breakpoint mobile -- version one
     // @include breakpoint($mobile){
-    //   width: 150px;
+    //   position: fixed;
+    //   width: 100vw;
     // }
+  //breakpoint mobile -- version two
+    @include breakpoint($mobile){
+      width: 150px;
+    }
 }
 .side-nav--show{
   transform: translateX(200px);
@@ -125,20 +126,20 @@ a{
     font-weight: lighter;
     text-transform: lowercase;
     transition: all 500ms ease;
-    //breakpoint mobile
-      @include breakpoint($mobile){
-        text-align: center;
-        margin: 0;
-        padding: 6px 0;
-        font-size: 1.2em;
-      }
-    //breakpoint mobile -- version two
+    //breakpoint mobile -- version one
       // @include breakpoint($mobile){
       //   text-align: center;
       //   margin: 0;
-      //   padding: 2px;
-      //   font-size: .6em;
+      //   padding: 6px 0;
+      //   font-size: 1.2em;
       // }
+    //breakpoint mobile -- version two
+      @include breakpoint($mobile){
+        text-align: center;
+        margin: 0;
+        padding: 2px;
+        font-size: .8em;
+      }
     &:hover{
       background: $sitecol-3;
       a{
@@ -163,10 +164,10 @@ a{
 
 .main--show{
   margin-left: 300px;
-  //breakpoint mobile version two
-    // @include breakpoint($mobile){
-    //   margin-left: 150px;
-    // }
+  //breakpoint mobile -- version two (no version one for this class)
+    @include breakpoint($mobile){
+      margin-left: 150px;
+    }
 }
 
 .social-side-nav {
