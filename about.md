@@ -3,8 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
-Hi, I'm Max and I'm a *web developer* and *web designer*. I'm working with this lovely kind of stuff for many years. I really enjoy css3 animations, and transitions most of the time in my job. Also I always have fun learning something new.
+Hi, I'm Max and I'm a *web developer*. I working in this area with much passion and dedication from many years. In my job, for the most of the time, I really enjoy css animations... I'm a big fun of css language! I'm also always interesting to learning something new in web development.
 
 <!-- If you are looking for a passionate web developer and you are in the South of UK please contact me. -->
 
-You can find some of my code on my: [github](https://github.com/huckbit) page.
+You can find some of my project on my [github](https://github.com/huckbit) page, or some of my front-end _"pen"_ inside my [codepen](http://codepen.io/huckbit/) page.
+
+Start a conversation, contact me via [twitter](https://twitter.com/HuckBIT).
