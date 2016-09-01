@@ -137,9 +137,7 @@ a{
 
     //breakpoint mobile -- version two
       @include breakpoint($mobile){
-        margin: 0;
-        padding: 2px 5px;
-        font-size: .8em;
+        //no style needed
       }
     &:hover{
       background: $sitecol-3;
