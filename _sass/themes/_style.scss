@@ -14,6 +14,10 @@
 $firstFontStyle: 'Playfair Display',fontAwesome, Helvetica, Arial, sans-serif;
 $secondFontStyle: 'Bebas', fontAwesome, Helvetica, Arial, sans-serif;
 
+//breakpoint viewport
+$mobile: max-width 320px;
+$tablet: max-width 768px;
+$small-desk: max-width 960px;
 
 /**============================================================
    General style
@@ -52,6 +56,10 @@ a{
     //header-nav__menu--home
     @include modifier('home'){
       font-size: 1.4em;
+      //breakpoint mobile
+        @include breakpoint($mobile) {
+          font-size: .9em;
+        }
       &::before, &::after{
         position: relative;
         color: $sitecol-2;
@@ -89,6 +97,10 @@ a{
   background-color: $sitecol-2;
   visibility: hidden;
   transition: all 300ms linear;
+  //breakpoint mobile
+    @include breakpoint($mobile){
+      width: 320px;
+    }
 }
 .side-nav--show{
   transform: translateX(200px);
@@ -99,7 +111,6 @@ a{
   padding-top: span(1 of 12);
   font-weight: 100;
   text-align: left;
-
   //menu__item
   @include element('item') {
     padding: 7px 0px 7px 10px;
@@ -109,6 +120,13 @@ a{
     font-weight: lighter;
     text-transform: lowercase;
     transition: all 500ms ease;
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        font-size: 1.2em;
+      }
     &:hover{
       background: $sitecol-3;
       a{
@@ -138,6 +156,10 @@ a{
 .social-side-nav {
   margin-top: 20%;
   margin-left: 3%;
+  //breakpoint mobile
+    @include breakpoint($mobile){
+      text-align: center;
+    }
   //social-side-nav__item
   @include element('item'){
     padding-right: 5px;
@@ -151,6 +173,12 @@ a{
       position: relative;
       width: 55%;
       left: -2px;
+      //breakpoint mobile
+        @include breakpoint($mobile){
+          padding-top: 10%;
+          width: 100%;
+          left: -5px;
+        }
     }
     @include modifier('description'){
       color: $white;
@@ -261,6 +289,11 @@ a{
 .home {
   @include span(10);
   @include push(1);
+  //breakpoint mobile
+    @include breakpoint($mobile){
+      @include span(12);
+      text-align: center;
+    }
 }
 
 .post-loop {
@@ -271,6 +304,10 @@ a{
     color: $sitecol-3;
     margin-bottom: 2%;
     font-size: 3em;
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        font-size: 1.5em;
+      }
   }
   //post-loop__meta
   @include element('meta'){
@@ -286,6 +323,39 @@ a{
 
 
 /**============================================================
+   page style
+  ============================================================= */
+.page {
+  @include span(8);
+  @include push(2);
+  height: 100%;
+  //breakpoint mobile
+  @include breakpoint($mobile){
+    @include span(12);
+    text-align: center;
+  }
+  //page__title
+  @include element('title'){
+    color: $sitecol-2;
+    margin-bottom: 3%;
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        font-size: 2em;
+      }
+  }
+  @include element('content'){
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        font-size: .8em;
+        line-height: 1.5em;
+      }
+  }
+}
+
+
+
+
+/**============================================================
    Post page style
   ============================================================= */
 
@@ -293,10 +363,14 @@ a{
   //post__title
   @include element('title'){
     font-family: $secondFontStyle;
-    color: #F43059;
+    color: $sitecol-3;
     letter-spacing: 1px;
     font-size: 5em;
     margin-top: 7%;
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        font-size: 1.5em;
+      }
   }
   //post__subtitle
   @include element('subtitle'){
@@ -304,13 +378,21 @@ a{
     margin:0;
     line-height: 1.2em;
     color: $sitecol-2;
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        font-size: 1.1em;
+      }
   }
 
-  //post__date
+  //post__meta
   @include element('meta'){
     line-height: 1.8em;
     font-size: 1em;
     color: $sitecol-2;
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        font-size: .6em;
+      }
   }
 
   //post__author
@@ -329,6 +411,16 @@ a{
   @include element('content'){
     margin-top: 7%;
     margin-bottom: 10%;
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        font-size: .8em;
+        line-height: 1.3;
+        pre {
+          font-size: 1em;
+          padding: 0;
+          margin: 0;
+        }
+      }
   }
 }
 
@@ -338,6 +430,10 @@ a{
   padding-top: 3%;
   font-size: 1.5em;
   margin-bottom: 10%;
+  //breakpoint mobile
+    @include breakpoint($mobile){
+      font-size: .5em;
+    }
   h2 {
     margin: 0;
     line-height: 1.8em;
@@ -354,6 +450,10 @@ a{
       margin: 0;
       line-height: 1.5em;
       font-family: $secondFontStyle;
+      //breakpoint mobile
+        @include breakpoint($mobile){
+          font-size: 1.6em;
+        }
     }
     small {
       font-family: $firstFontStyle;
@@ -366,21 +466,6 @@ a{
   }
 }
 
-
-/**============================================================
-   page style
-  ============================================================= */
-.page {
-  @include span(8);
-  @include push(2);
-  height: 70vh;
-  @include element('title'){
-    color: $sitecol-2;
-    margin-bottom: 3%;
-  }
-}
-
-
 /**============================================================
    footer style
   ============================================================= */
@@ -392,4 +477,9 @@ footer{
 .copyright {
   font-size: .8em;
   color: $lightgrey;
+  //breakpoint mobile
+    @include breakpoint($mobile){
+      font-size: .5em;
+      margin: 5% 0;
+    }
 }
