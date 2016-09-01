@@ -16,18 +16,20 @@ You can find icons inside your Edit menu: `Edit -> Emoji & Symbols`.
 
 How to add custom icons to our bash?
 
-So edit your .bash_profile with your favorite editor vim, nano for example, and add the line:
+So edit your `.bash_profile` with your favorite editor vim or nano for example, and add this line:
 
 {% highlight ruby %}
 PS1=" "
 {% endhighlight %}
 
-Open Emoji & Symbol panel and drag and drop your favorite `emoji` inside quotation marks.
+Open **Emoji & Symbol** panel and drag and drop your favorite emoji inside quotation marks.
 
 ![drag and Drop]({{site.baseurl}}/images/posts/terminal-cust.gif)
 
 Depending on terminal settings, nothing may be visible after using drag & drop. Close and reopen you terminal and voilà:
 ![my terminal]({{site.baseurl}}/images/posts/terminal-hb.png)
+
+You can customise terminal bash with some others options:
 
 | code   | description                             
 |:-------|:----------------------------------------|
