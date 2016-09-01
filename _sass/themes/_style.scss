@@ -15,8 +15,8 @@ $firstFontStyle: 'Playfair Display',fontAwesome, Helvetica, Arial, sans-serif;
 $secondFontStyle: 'Bebas', fontAwesome, Helvetica, Arial, sans-serif;
 
 //breakpoint viewport
-$mobile: max-width 320px;
-$tablet: max-width 768px;
+$mobile: 320px 767px;
+$tablet: 768px 959px;
 $small-desk: max-width 960px;
 
 /**============================================================
@@ -99,7 +99,7 @@ a{
   transition: all 300ms linear;
   //breakpoint mobile
     @include breakpoint($mobile){
-      width: 320px;
+      width: 100vw;
     }
 }
 .side-nav--show{
