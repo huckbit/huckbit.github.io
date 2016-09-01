@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 order: 2
 ---
-Hi, I'm Max and I'm a *web developer*.  I am working in this area with a lot of passion and dedication from many years. In my job, for the most of the time, I really enjoy css animations… I’m a big fun of css language! I’m also always keen to learn something new in web development.
+Hi, I'm Max and I'm a *web developer*.  I am working in this area with a lot of passion and dedication from many years. In my job, for the most of the time, I really enjoy css animations… I’m a big fan of css language! I’m also always keen to learn something new in web development.
 
 <!-- If you are looking for a passionate web developer and you are in the South of UK please contact me. -->
 

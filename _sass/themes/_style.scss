@@ -17,7 +17,8 @@ $secondFontStyle: 'Bebas', fontAwesome, Helvetica, Arial, sans-serif;
 //breakpoint viewport
 $mobile: 320px 767px;
 $tablet: 768px 959px;
-$small-desk: max-width 960px;
+$desk: 960px 1199px;
+$retina: max-width 1440px;
 
 /**============================================================
    General style
