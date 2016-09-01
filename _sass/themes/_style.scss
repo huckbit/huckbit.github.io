@@ -135,21 +135,31 @@ a{
   margin-left: 300px;
 }
 
-.social-side-nav{
-  margin-top: 5%;
-  margin-left: 5%;
+.social-side-nav {
+  margin-top: 20%;
+  margin-left: 3%;
   //social-side-nav__item
   @include element('item'){
     padding-right: 5px;
+    font-size: 1.2em;
     //social-side-nav__item--last
     @include modifier('last'){
       padding-right: 0;
+    }
+    @include modifier('separator'){
+      border-top: 8px solid $sitecol-3;
+      position: relative;
+      width: 55%;
+      left: -2px;
     }
     @include modifier('description'){
       color: $white;
       font-size: .8em;
     }
   }
+}
+.link--white-social {
+  @include linx($white, $white, $sitecol-3, $sitecol-3);
 }
 /**============================================================
    hamburger button style
