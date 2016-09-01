@@ -5,7 +5,7 @@ layout: default
 <div class="home">
 
   <ul class="post-loop list--unstyled">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 3 %}
       <li>
         <h2 class="post-loop__title">
           <a class="link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords: 5 | escape }}</a>
