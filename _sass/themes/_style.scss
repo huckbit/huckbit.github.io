@@ -31,6 +31,11 @@ body {
   color: $sitecol-1;
 }
 
+a{
+  text-decoration: none;
+  @include linx($sitecol-3, $sitecol-3, $sitecol-2, $sitecol-2);
+}
+
 .link {
   //link--white
   @include modifier('white'){
@@ -327,8 +332,12 @@ body {
    page style
   ============================================================= */
 .page {
-  @include span(10);
-  @include push(1);
+  @include span(8);
+  @include push(2);
+  @include element('title'){
+    color: $sitecol-2;
+    margin-bottom: 3%;
+  }
 }
 
 
