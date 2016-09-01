@@ -126,6 +126,9 @@ a{
     font-weight: lighter;
     text-transform: lowercase;
     transition: all 500ms ease;
+    a {
+      display: block; //for having full hover state on sidebar items
+    }
 
     //breakpoint mobile -- version one
       // @include breakpoint($mobile){
@@ -342,6 +345,11 @@ a{
     font-size: .8em;
     padding-left: 1%;
   }
+}
+
+.pagination {
+  @include full;
+  margin-top: span(1);
 }
 
 .rss-subscribe {

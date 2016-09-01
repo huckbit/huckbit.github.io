@@ -27,5 +27,10 @@ github_username:  huckbit
 # Build settings
 markdown: kramdown
 
+# Custom configs
+gems: [jekyll-paginate]
+
+#setup
+paginate: 3
 sass:
     sass_dir: _sass

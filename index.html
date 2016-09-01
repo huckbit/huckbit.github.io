@@ -6,7 +6,7 @@ title: home
 <div class="home">
 
   <ul class="post-loop list--unstyled">
-    {% for post in site.posts limit: 3 %}
+    {% for post in paginator.posts limit: 3 %}
       <li>
         <h2 class="post-loop__title">
           <a class="link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords: 5 | escape }}</a>
@@ -15,4 +15,21 @@ title: home
       </li>
     {% endfor %}
   </ul>
+</div>
+
+<div class="pagination text--center">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
 </div>
