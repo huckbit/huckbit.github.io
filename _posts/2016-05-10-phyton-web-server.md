@@ -10,19 +10,21 @@ author:
 date:   2016-05-10 19:00:00 +0100
 categories: osx
 ---
-If you are on linux / OsX or inside a phyton environment you can start a web server on the fly inside your project simply recalling an alias from the terminal in your project folder.
+If you are on linux / OSX or inside a phyton environment you can start a web server on the fly simply recalling an alias from the terminal in your project folder.
 
-You have to edit your bash profile and add the following line:
+Edit your bash profile and add the following line:
 
 ```
 alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 ```
 
-This feature is very useful when you are working in local host with a browser that disables the `origin load` by default (i.e. Chrome).
+This feature is very useful when you are working in local host with a browser that disables by default the `origin load` (i.e. Chrome).
 
-inserted the alias inside the `.bash_profile`, refresh with the following command:
+after inserted the alias inside the`.bash_profile`, refresh with the following command
 
 ```
-$ source ~/.bash_profile
+source ~/.bash_profile
 ```
-inside your project folder you just type `$ server` to open your web server.
+or restart you terminal. Now in the path of your project type`server`to open the web server.
+
+Did you find useful this methodology for your webdev projects?

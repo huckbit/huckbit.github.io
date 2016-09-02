@@ -11,7 +11,7 @@ date:   2016-09-02 16:00:00 +0100
 categories: webdev
 tags: fontAwesome css icons fonts
 ---
-Personally I really like [FontAwesome](http://fontawesome.io/): it is really helpfull! The canonical method, according to the [official documentation](http://fontawesome.io/examples/), is this:
+Personally I really like [FontAwesome](http://fontawesome.io/): it is really helpful! The canonical method, according to the [official documentation](http://fontawesome.io/examples/), is this:
 
 1. {:#point-one}link the [CDN](https://cdnjs.com/libraries/font-awesome) or the file in you asset as a css library link
 2. use inside the html the `i` tag:
