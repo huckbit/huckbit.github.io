@@ -59,3 +59,10 @@ var disqus_shortname = 'huckbit'; // required: replace example with your forum s
 
   ga('create', 'UA-83611183-1', 'auto');
   ga('send', 'pageview');
+
+
+/*
+  TWITTER SHARE CONFIGURATION SECTION
+  ----------------------------------------------------------------------
+*/
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');

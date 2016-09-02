@@ -469,9 +469,17 @@ a{
   }
 }
 
+
+.share-to-social {
+  margin-bottom: 10%;
+}
+//don't touch the name of class is twitter owner
+.twitter-share-button {
+  vertical-align: middle;
+}
 .get-in-touch{
   font-size: 1.7em;
-  margin-bottom: 12%;
+  margin-bottom: -3.5%;
   //breakpoint mobile
     @include breakpoint($mobile){
       font-size: .8em;
