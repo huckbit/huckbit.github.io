@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="page">
+<div class="post-page">
 
 <!-- post section -->
   <div class="post">
@@ -14,11 +14,20 @@ layout: default
     <div class="post__content">
       {{ content }}
     </div>
-
   </div>
 
+<!-- <div class="categories">
+  <p class="categories__meta">categories: {{page.categories}}  tags: <a href="">{{page.tags}}</a></p>
+</div> -->
+
+<div class="get-in-touch">
+  <p>
+    <a href="#comment">Leave a comment</a> or contact me via Twitter <a href="https://twitter.com/@huckbit" target="_blank">@huckbit</a>
+  </p>
+</div>
 
 <!-- disquis section -->
+  <div id="comment"></div><!-- I used this to connect comment with disqus -->
   <div id="disqus_thread"></div>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

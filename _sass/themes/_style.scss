@@ -394,7 +394,14 @@ a{
 /**============================================================
    Post page style
   ============================================================= */
-
+.post-page{
+  @include span(10);
+  @include push(1);
+  //breakpoint mobile
+  @include breakpoint($mobile){
+    @include span(12);
+  }
+}
 .post {
   //post__title
   @include element('title'){
@@ -459,6 +466,16 @@ a{
         }
       }
   }
+}
+
+.get-in-touch{
+  font-size: 1.7em;
+  margin-bottom: 12%;
+  //breakpoint mobile
+    @include breakpoint($mobile){
+      font-size: .8em;
+      line-height: 1.2em;
+    }
 }
 
 .related-post {

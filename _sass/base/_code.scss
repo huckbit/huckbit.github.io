@@ -32,17 +32,18 @@ pre code {
   font-size: 85%;
   color: inherit;
   background-color: transparent;
-
 }
 
 // Pygments via Jekyll
 .highlight {
   padding: 1rem;
   margin-bottom: 1rem;
-  font-size: .8rem;
+  font-size: 1.2rem;
   line-height: 1.4;
-  background-color: #f9f9f9;
-  border-radius: .25rem;
+  background-color: #505050;
+  color: #fff;
+  border-left: 7px solid #F43059;
+  border-radius: 4px;
 
   pre {
     margin-bottom: 0;

@@ -18,16 +18,17 @@ How to add custom icons to our bash?
 
 So edit your `.bash_profile` with your favorite editor vim or nano for example, and add this line:
 
-{% highlight ruby %}
+```
 PS1=" "
-{% endhighlight %}
+```
 
 Open **Emoji & Symbol** panel and drag and drop your favorite emoji inside quotation marks.
 
-![drag and Drop]({{site.baseurl}}/images/posts/terminal-cust.gif)
+![drag and Drop]({{site.baseurl}}/images/posts/terminal-cust.gif){: .image--center}
+
 
 Depending on terminal settings, nothing may be visible after using drag & drop. Close and reopen you terminal and voilà:
-![my terminal]({{site.baseurl}}/images/posts/terminal-hb.png)
+![my terminal]({{site.baseurl}}/images/posts/terminal-hb.png){: .image--center}
 
 You can customise terminal bash with some others options:
 
@@ -43,7 +44,9 @@ You can customise terminal bash with some others options:
 
 
 This is my favourite customisation:
-{% highlight ruby %}
+
+```
 PS1="🌀  \u@\h\W$ "
-{% endhighlight %}
+```
+
 What’s yours?
