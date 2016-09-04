@@ -469,14 +469,29 @@ a{
   }
 }
 
-
-.share-to-social {
+//section for buttons share-to-social
+.share-to-social, {
   margin-bottom: 10%;
+  li {
+    margin-right: 1%;
+  }
 }
-//don't touch the name of class is twitter owner
+.text-share{
+  font-size: 1em;
+  vertical-align: -3px;
+  margin-right: 1px;
+}
+
 .twitter-share-button {
-  vertical-align: middle;
+  vertical-align: -6px;
+  margin-top: 2px;
 }
+
+.gplus-list {
+  vertical-align: -webkit-baseline-middle;
+}
+
+//get in touch section style
 .get-in-touch{
   font-size: 1.7em;
   margin-bottom: -3.5%;
