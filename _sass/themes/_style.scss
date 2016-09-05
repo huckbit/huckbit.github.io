@@ -47,26 +47,6 @@ a{
   }
 }
 
-.no-animate-mobile {
-  @include breakpoint($mobile){
-    /*CSS transitions*/
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-  }
-}
-
 /**============================================================
    header style
   ============================================================= */
@@ -82,32 +62,42 @@ a{
       //breakpoint mobile
         @include breakpoint($mobile) {
           font-size: 1.5em;
-          margin-right: 0;
+          margin-right: -6px;
         }
       &::before, &::after{
         position: relative;
         color: $sitecol-2;
         transition: all 500ms ease;
         opacity: 0;
-        @include breakpoint($mobile){
-          visibility: hidden;
-        }
+        //breakpoint mobile
+          @include breakpoint($mobile){
+            visibility: hidden;
+          }
       }
       &::before {
         content: "[ ";
         margin-right: -10px;
+        //breakpoint mobile
+          @include breakpoint($mobile){
+            margin-right: 0;
+          }
       }
       &::after {
         content: " ]";
         margin-left: -10px;
+        //breakpoint mobile
+          @include breakpoint($mobile){
+            margin-left: 0;
+          }
       }
       &:hover::before, &:hover::after{
         color: $sitecol-3;
         margin: 0 3px;
         opacity: 1;
-        @include breakpoint($mobile){
-          visibility: hidden;
-        }
+        //breakpoint mobile
+          @include breakpoint($mobile){
+            margin: 0;
+          }
       }
 
       // &:hover::after{
