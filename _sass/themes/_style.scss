@@ -361,6 +361,7 @@ a{
     //breakpoint mobile
       @include breakpoint($mobile) {
         left: -15%;
+        top: 4px;
       }
   }
 
