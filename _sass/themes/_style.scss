@@ -392,12 +392,15 @@ a{
     font-size: 3em;
     -webkit-word-spacing: .1em;
     transition: all 1000ms ease;
-    display: block;
+    outline: none;
     &:hover {
       -webkit-transform: scale(1.04);
       -moz-transform: scale(1.04);
       -ms-transform: scale(1.04);
       transform: scale(1.04);
+      @include breakpoint($mobile){
+        transform: none;
+      }
     }
     //breakpoint mobile
       @include breakpoint($mobile){
