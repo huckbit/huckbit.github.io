@@ -5,4 +5,4 @@ permalink: /contact/
 order: 3
 ---
 
-contact me at [info@huckbit.com](mailto:@info@huckbit.com)
+contact me via twitter [@huckbit](https://twitter.com/@huckbit)
