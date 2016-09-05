@@ -11,7 +11,8 @@ title: home
         <h2 class="post-loop__title">
           <a class="link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords: 5 | escape }}</a>
         </h2>
-        <span class="post-loop__meta">&#xf073; {{ post.date | date: "%b %-d, %Y" }}</span>
+        <h4 class="post-loop__subtitle">{{ post.subtitle }}</h4>
+        <span class="post-loop__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       </li>
     {% endfor %}
   </ul>
