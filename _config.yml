@@ -17,7 +17,7 @@ title: huckbit blog site
 name: huckbit
 email: info@huckbit.com
 description: > # this means to ignore newlines until "baseurl:"
-  front-end developer, css fan and and photography addicted. Contact me on twitter via @huckbit
+  Massimiliano Ranauro: front-end developer, CSS fan and and photography addicted. Contact me on twitter via @huckbit
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: huckbit
