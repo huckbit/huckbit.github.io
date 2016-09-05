@@ -105,6 +105,9 @@ a{
         color: $sitecol-3;
         margin: 0 3px;
         opacity: 1;
+        @include breakpoint($mobile){
+          visibility: hidden;
+        }
       }
 
       // &:hover::after{
