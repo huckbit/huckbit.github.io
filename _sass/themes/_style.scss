@@ -54,8 +54,8 @@ a{
   //header-nav__menu
   @include element('menu'){
     margin-top: -65px;
-    //header-nav__menu--home
-    @include modifier('home'){
+    //header-nav__menu--home§
+    @include modifier('title'){
       font-size: 1.4em;
       //breakpoint mobile
         @include breakpoint($mobile) {
@@ -80,6 +80,22 @@ a{
       // &:hover::after{
       //   color: $sitecol-3;
       // }
+    }
+    @include modifier('subtitle'){
+      margin-top: 5px;
+      font-size: .9em;
+      color: $sitecol-2;
+      a {
+        font-family: $secondFontStyle;
+        font-size: 1em;
+        word-spacing: 5px;
+        padding-right: 6px;
+      }
+      //breakpoint mobile
+        @include breakpoint($mobile) {
+          font-size: .4em;
+          margin-top: -7px;
+        }
     }
   }
 }
@@ -304,7 +320,11 @@ a{
 
   //hamburger-x--left
   @include modifier('left') {
-    left: -10%;
+    left: -3%;
+    //breakpoint mobile
+      @include breakpoint($mobile) {
+        left: -10%;
+      }
   }
 
 }
@@ -318,12 +338,11 @@ a{
   //breakpoint mobile
     @include breakpoint($mobile){
       @include span(12);
-      text-align: center;
     }
 }
 
 .post-loop {
-  margin-top: 7%;
+  margin-top: 9%;
   //breakpoint mobile
     @include breakpoint($mobile){
       margin-top: 25%;
@@ -351,6 +370,10 @@ a{
 .pagination {
   @include full;
   margin-top: span(1);
+  //breakpoint mobile
+    @include breakpoint($mobile) {
+      font-size: .8em;
+    }
 }
 
 .rss-subscribe {
