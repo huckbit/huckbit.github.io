@@ -56,7 +56,9 @@ a{
     margin-top: -65px;
     //header-nav__menu--home§
     @include modifier('title'){
-      font-size: 1.4em;
+      font-size: 3.8em;
+      font-weight: bolder;
+      margin-right: -35px;
       //breakpoint mobile
         @include breakpoint($mobile) {
           font-size: .9em;
@@ -65,16 +67,20 @@ a{
         position: relative;
         color: $sitecol-2;
         transition: all 500ms ease;
+        opacity: 0;
       }
       &::before {
         content: "[ ";
+        margin-right: -10px;
       }
       &::after {
         content: " ]";
+        margin-left: -10px;
       }
       &:hover::before, &:hover::after{
         color: $sitecol-3;
         margin: 0 3px;
+        opacity: 1;
       }
 
       // &:hover::after{
@@ -82,14 +88,14 @@ a{
       // }
     }
     @include modifier('subtitle'){
-      margin-top: 5px;
+      margin-top: 3px;
       font-size: .9em;
       color: $sitecol-2;
       a {
         font-family: $secondFontStyle;
         font-size: 1em;
         word-spacing: 5px;
-        padding-right: 6px;
+        padding-right: 8px;
       }
       //breakpoint mobile
         @include breakpoint($mobile) {
