@@ -133,7 +133,9 @@ a{
     }
 }
 .side-nav--show{
-  transform: translateX(200px);
+  -webkit-transform: translateX(200px);
+  -moz-transform: translateX(200px);
+  -ms-transform: translateX(200px);
   visibility: visible;
 }
 
@@ -257,6 +259,9 @@ a{
   border-radius: none;
   border: none;
   cursor: pointer;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  -ms-transform: scale(.5);
   transform: scale(.5);
   transition: background 0.3s;
   &:focus {
@@ -312,11 +317,17 @@ a{
       background: none;
       &::before {
         top: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         background: $white;
       }
       &::after {
         top: 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
         background: $white;
       }
@@ -366,6 +377,9 @@ a{
     -webkit-word-spacing: .1em;
     transition: all 1000ms ease;
     &:hover {
+      -webkit-transform: scale(1.04);
+      -moz-transform: scale(1.04);
+      -ms-transform: scale(1.04);
       transform: scale(1.04);
     }
     //breakpoint mobile
