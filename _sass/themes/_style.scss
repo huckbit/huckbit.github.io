@@ -678,13 +678,12 @@ footer{
   }
   &:before {
     position: absolute;
-    border: 25px solid transparent;
+    border: 15px solid transparent;
     border-top-color: $sitecol-2;
     border-radius: 50%;
-    // top: -15px;
-    // left: -15px;
-    top: 0;
-    left: 0;
+    top: -15px;
+    left: -15px;
+    box-sizing: content-box;
     transform-origin: center center;
     animation: rotate-slide 3s ease infinite;
   }
@@ -696,14 +695,14 @@ footer{
     position: absolute;
     text-decoration: none;
     font-family: $secondFontStyle;
-    font-size: 2em;
+    font-size: 1em;
     padding: 5%;
-    top: -9px;
-    left: 18px;
-    color: $sitecol-2;
+    top: 12px;
+    left: 10px;
+    color: $white;
     transform-origin: center center;
-    animation: bigger 3s ease 2s infinite;
-    //transform: scale(2.3);
+    line-height: 1.2;
+    animation: dim 3s ease infinite;
   }
 }
 
@@ -718,13 +717,11 @@ footer{
 }
 
 
-@keyframes bigger {
+@keyframes dim {
   0%, 100% {
-    transform: scale(1);
-    opacity: .9;
+    opacity: 1;
   }
   50% {
-    transform: scale(1.1);
-    opacity: 1;
+    opacity: .2;
   }
 }
