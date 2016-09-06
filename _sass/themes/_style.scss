@@ -703,6 +703,7 @@ footer{
     color: $sitecol-2;
     transform-origin: center center;
     animation: bigger 3s ease 2s infinite;
+    //transform: scale(2.3);
   }
 }
 
@@ -723,7 +724,7 @@ footer{
     opacity: .9;
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 1;
   }
 }
