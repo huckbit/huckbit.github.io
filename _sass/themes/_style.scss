@@ -654,6 +654,7 @@ footer{
 //go-up style
 .go-up {
   position: fixed;
+  opacity: .9;
   top: 85%;
   right: 3%;
   width: 80px;
@@ -689,6 +690,7 @@ footer{
   }
   &:hover {
     transform: scale(1.1);
+    opacity: 1;
   }
   a {
     position: absolute;
