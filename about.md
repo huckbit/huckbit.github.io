@@ -10,4 +10,4 @@ Hi, I'm Max and I'm a *web developer*.  I am working in this area with a lot of 
 
 You can find some of my project on my [github](https://github.com/huckbit) page, or some of my front-end _"pen"_ inside my [codepen](http://codepen.io/huckbit/) page.
 
-Start a conversation ... contact me via [@twitter](https://twitter.com/@huckbit).
+Start a conversation ... contact me via twitter [@huckbit](https://twitter.com/@huckbit).
