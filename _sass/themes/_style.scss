@@ -670,6 +670,9 @@ footer{
     @include breakpoint($mobile){
       visibility: hidden;
     }
+    @include breakpoint($tablet){
+      visibility: hidden;
+    }
   &:before, &:after {
     content: "";
     display: block;
