@@ -9,6 +9,7 @@ order: 3
 
 What I used to create this theme and blog site:
 
+{: .text--left }
 - Engine: [Jekyll](https://jekyllrb.com/) ... off course!
 - Hosting: [github.io](http://github.io) - [huckbit.github.io](http://huckbit.github.io)
 - My [sass style framework](http://style.huckbit.com) cloned from my repository on [github](https://github.com/huckbit/sass)

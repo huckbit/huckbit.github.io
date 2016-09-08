@@ -755,6 +755,12 @@ footer{
   .max-photo {
     color: $sitecol-3;
     cursor: pointer;
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        color: $sitecol-1;
+        cursor: auto;
+        pointer-events: none;
+      }
     &:hover:after{
       content: url(https://gitlab.com/huckbit/blog-images/raw/master/images/max.jpg);
       position: absolute;
@@ -766,12 +772,6 @@ footer{
       top: 27%;
       transform-origin: center center;
       animation: image-enter 400ms ease-in-out;
-      //breakpoint mobile
-        @include breakpoint($mobile){
-          content: url(https://gitlab.com/huckbit/blog-images/raw/master/images/max-mobile.jpg);
-          right: 25%;
-          top: 40%;
-        }
     }
   }
 
