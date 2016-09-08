@@ -40,6 +40,19 @@ a{
   @include linx($sitecol-3, $sitecol-3, $sitecol-2, $sitecol-2);
 }
 
+//style fot table
+th, tr,td {
+  padding: 1% 3%;
+  border-top: 1px solid $lightgrey;
+}
+th {
+  border-top: hidden;
+  color: $sitecol-3;
+  text-transform: uppercase;
+  font-family: $secondFontStyle;
+}
+
+
 .link {
   //link--white
   @include modifier('white'){
@@ -733,3 +746,42 @@ footer{
     opacity: .2;
   }
 }
+
+
+/**============================================================
+   about page style
+  ============================================================= */
+
+  .max-photo {
+    color: $sitecol-3;
+    cursor: pointer;
+    &:hover:after{
+      content: url(https://gitlab.com/huckbit/blog-images/raw/master/images/max.jpg);
+      position: absolute;
+      border: 1px solid $lightgrey;
+      padding: 5px 5px 0 5px;
+      border-radius: 5px;
+      background-color: $white;
+      right: 22%;
+      top: 27%;
+      transform-origin: center center;
+      animation: image-enter 400ms ease-in-out;
+      //breakpoint mobile
+        @include breakpoint($mobile){
+          content: url(https://gitlab.com/huckbit/blog-images/raw/master/images/max-mobile.jpg);
+          right: 25%;
+          top: 40%;
+        }
+    }
+  }
+
+  @keyframes image-enter{
+    0%{
+      transform: scale(0.1) translateY(-200px);
+      opacity: 0;
+    }
+    100%{
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+    }
+  }
