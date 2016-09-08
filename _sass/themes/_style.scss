@@ -752,36 +752,36 @@ footer{
    about page style
   ============================================================= */
 
-  .max-photo {
-    color: $sitecol-3;
-    cursor: pointer;
-    //breakpoint mobile
-      @include breakpoint($mobile){
-        color: $sitecol-1;
-        cursor: auto;
-        pointer-events: none;
-      }
-    &:hover:after{
-      content: url(https://gitlab.com/huckbit/blog-images/raw/master/images/max.jpg);
-      position: absolute;
-      border: 1px solid $lightgrey;
-      padding: 5px 5px 0 5px;
-      border-radius: 5px;
-      background-color: $white;
-      right: 22%;
-      top: 27%;
-      transform-origin: center center;
-      animation: image-enter 400ms ease-in-out;
-    }
-  }
-
-  @keyframes image-enter{
-    0%{
-      transform: scale(0.1) translateY(-200px);
-      opacity: 0;
-    }
-    100%{
-      transform: scale(1) translateY(0px);
-      opacity: 1;
-    }
-  }
+  // .max-photo {
+  //   color: $sitecol-3;
+  //   cursor: pointer;
+  //   //breakpoint mobile
+  //     @include breakpoint($mobile){
+  //       color: $sitecol-1;
+  //       cursor: auto;
+  //       pointer-events: none;
+  //     }
+  //   &:hover:after{
+  //     content: url(https://gitlab.com/huckbit/blog-images/raw/master/images/max.jpg);
+  //     position: absolute;
+  //     border: 1px solid $lightgrey;
+  //     padding: 5px 5px 0 5px;
+  //     border-radius: 5px;
+  //     background-color: $white;
+  //     right: 22%;
+  //     top: 27%;
+  //     transform-origin: center center;
+  //     animation: image-enter 400ms ease-in-out;
+  //   }
+  // }
+  //
+  // @keyframes image-enter{
+  //   0%{
+  //     transform: scale(0.1) translateY(-200px);
+  //     opacity: 0;
+  //   }
+  //   100%{
+  //     transform: scale(1) translateY(0px);
+  //     opacity: 1;
+  //   }
+  // }
