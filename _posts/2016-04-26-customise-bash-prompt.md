@@ -24,11 +24,11 @@ PS1=" "
 
 Open **Emoji & Symbol** panel and drag and drop your favorite emoji inside quotation marks.
 
-![drag and Drop]({{site.baseurl}}/images/posts/terminal-cust.gif){: .image--center}
+![drag and Drop]({{site.baseurl}}/assets/images/posts/terminal-cust.gif){: .image--center}
 
 
 Depending on terminal settings, nothing may be visible after using drag & drop. Close and reopen you terminal and voilà:
-![my terminal]({{site.baseurl}}/images/posts/terminal-hb.png){: .image--center}
+![my terminal]({{site.baseurl}}/assets/images/posts/terminal-hb.png){: .image--center}
 
 You can customise terminal bash with some others options:
 
