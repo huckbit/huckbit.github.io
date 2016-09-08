@@ -17,7 +17,7 @@ What I used to create this theme and blog site:
 - Custom grid created using: [susy](http://susy.oddbird.net/)
 - Helper for responsive design: [breakpoint-sass](http://breakpoint-sass.com/)
 - Icons: [fontAwesome](http://breakpoint-sass.com/)
-- Ide: [atom](https://atom.io/) with [emmet](http://emmet.io/) and others [cool packages]()
+- Ide: [atom](https://atom.io/) with [emmet](http://emmet.io/) and others [cool packages](https://huckbit.github.io/webdev/2016/02/18/atom-packages.html)
 - Online ide: [codepen](http://codepen.io/huckbit/) for trying some animations
 - Terminal: [iTerm2](https://www.iterm2.com/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) on mac mini / mac book pro retina
 - Coffee: espresso with Nespresso machine most of the time ... but also americano from coffee beans
