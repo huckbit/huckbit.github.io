@@ -21,4 +21,4 @@ You can’t miss this packages in your atom ide configuration:
 - **minimap**: a preview of the full source code sublime style - [plugin page](https://atom.io/packages/minimap)
 - **pigments**: a package to display colors in project and files - [plugin page](https://atom.io/packages/pigments)
 
-Which packages do you love use in your workflow? Let me know!
+Which packages do you love to use in your workflow? Let me know, leave a comment down below!
