@@ -257,6 +257,7 @@ a{
 .link--white-social {
   @include linx($white, $white, $sitecol-3, $sitecol-3);
 }
+
 /**============================================================
    hamburger button style
   ============================================================= */
@@ -639,14 +640,18 @@ a{
 footer{
   @include full;
   margin-bottom: 2%;
-  margin-top:5%;
+  margin-top: 5%;
 }
 .copyright {
   font-size: .8em;
+  line-height: 1.5em;
   color: $lightgrey;
+  p {
+    margin: 0;
+  }
   //breakpoint mobile
     @include breakpoint($mobile){
-      font-size: .5em;
+      font-size: .4em;
       margin: 5% 0;
     }
 }
