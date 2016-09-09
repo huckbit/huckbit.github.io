@@ -137,7 +137,6 @@ th {
   }
 }
 
-
 /**============================================================
    sidebar nav style
   ============================================================= */
@@ -446,6 +445,52 @@ th {
       }
   }
 }
+
+.post-loop{
+  li{
+    &:nth-child(1), &:nth-child(3){
+      transform-origin: top center;
+      animation: enter-left 1000ms ease forwards;
+    }
+  }
+  li{
+    &:nth-child(2){
+      animation: enter-right 1000ms ease forwards;
+    }
+  }
+}
+
+@keyframes enter-left {
+  0%{
+    transform: translateX(-600px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(10px) rotate(-2deg);
+    opacity: .5;
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes enter-right {
+  0%{
+    transform: translateX(600px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-10px) rotate(2deg);
+    opacity: .5;
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+
 
 .pagination {
   @include full;
