@@ -11,7 +11,7 @@ date:   YYYY-MM-DD 00:00:00 +0100
 categories: webdev
 tags: data-attribute css tooltip
 ---
-A lot of web sites use JavaScript to create *tooltip* but is actually **easier doing that with CSS**.
+A lot of web sites use JavaScript to create *tooltip* but is actually **easier with CSS**.
 
 ### Inside span elements:
 
@@ -30,7 +30,7 @@ It's a quick and simple process: use`data-tooltip`, for example in *span* elemen
 
 ### Inside a link as well:
 
-Insert the`data-tooltip`inside the link and use the same style used for the span or other HTML elements.
+Insert`data-tooltip`inside the link and use the same style used for the span or other HTML elements.
 
 You can try the tooltip with the interactive example down below:
 
