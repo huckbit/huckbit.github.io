@@ -13,6 +13,8 @@ tags: data-attribute css tooltip
 ---
 A lot of web sites use JavaScript to create *tooltip* but is actually **easier with CSS**.
 
+![pure-css-tooltips](https://gitlab.com/huckbit/blog-images/raw/master/images/css-tooltip.png){: .image--center}
+
 ### Inside span elements:
 
 It's a quick and simple process: use`data-tooltip`, for example in *span* elements, or where you want in your HTML code. To show the content put `content` property equal to `attr()`inside the pseudo element and style as you like.
