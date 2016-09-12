@@ -173,9 +173,9 @@ th {
   text-align: left;
   //menu__item
   @include element('item') {
-    padding: 7px 0px 7px 10px;
+    padding: 7px 0px 7px 15px;
     margin-top: 0;
-    font-family: $firstFontStyle;
+    font-family: $secondFontStyle;
     font-size: 1em;
     font-weight: lighter;
     text-transform: lowercase;
@@ -209,7 +209,17 @@ th {
 /* this class is for the active element inside menu
 (jekyll function inside sidebar page ) */
 .active {
-  background: $sitecol-3;
+  background: rgba($sitecol-3, .3);
+  position: relative;
+  &::after{
+    content: '';
+    background: $sitecol-3;
+    width: 10px;
+    height: 45px;
+    position: absolute;
+    left: -4px;
+    -webkit-transform: translateY(-38px);
+  }
 }
 
 .main {
@@ -261,8 +271,9 @@ th {
         }
     }
     @include modifier('description'){
-      color: $white;
+      color: $sitecol-3;
       font-size: .8em;
+      font-family: $secondFontStyle;
     }
   }
 }
