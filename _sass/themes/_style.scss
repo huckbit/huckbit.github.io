@@ -219,6 +219,9 @@ th {
     position: absolute;
     left: -4px;
     -webkit-transform: translateY(-38px);
+    -moz-transform: translateY(-38px);
+    -ms-transform: translateY(-38px);
+    transform: translateY(-38px);
   }
 }
 
