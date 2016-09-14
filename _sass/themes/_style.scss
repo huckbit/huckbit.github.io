@@ -413,13 +413,9 @@ th {
   @include element('title'){
     font-family: $secondFontStyle;
     color: $sitecol-3;
-    margin-bottom: 2%;
+    margin-bottom: 18px;
     font-size: 3em;
-    line-height: 1em;
     //word-spacing: .1em;
-    -webkit-transition: all 1000ms ease;
-    -moz-transition: all 1000ms ease;
-    -ms-transition: all 1000ms ease;
     transition: all 1000ms ease;
     outline: none;
     &:hover {
