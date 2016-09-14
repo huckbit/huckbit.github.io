@@ -22,13 +22,13 @@
 
   setInterval(function(){
     $(window).scroll(function() {
-      if ($(window).scrollTop() > 500) {
+      if ($(window).scrollTop() > 1000) {
         icon.fadeIn('ease-in');
       } else {
         icon.fadeOut('ease-out');
       }
     });
-  }, 500);
+  }, 2000);
 
 
   //smooth Scrolling
