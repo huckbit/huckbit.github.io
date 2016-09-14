@@ -15,7 +15,6 @@
 * Description: Performs a smooth page scroll to an anchor on the same page.
 */
 
-(function(){
   /* The function shows the back-to-top icon when scrolls more than 500px */
   var icon = $('.go-up');
   icon.hide();
@@ -45,8 +44,6 @@
       }
     }
   });
-
-}());
 
 
 
