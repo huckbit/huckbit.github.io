@@ -744,6 +744,7 @@ footer{
   border-radius: 50%;
   box-shadow: 2px 10px 40px 0px #ccc;
   transition: all 300ms ease;
+  display: none; //use this instead icon.hide() inside js script otherwise you have unwanted icons
   //breakpoint mobile
     @include breakpoint($mobile){
       visibility: hidden;

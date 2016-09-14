@@ -15,9 +15,10 @@
 * Description: Performs a smooth page scroll to an anchor on the same page.
 */
 
+(function(){
   /* The function shows the back-to-top icon when scrolls more than 500px */
   var icon = $('.go-up');
-  icon.hide();
+  //icon.hide(); I used display:none in the css because the icon shows up disbling cache in browser
 
   setInterval(function(){
     $(window).scroll(function() {
@@ -28,8 +29,9 @@
       }
     });
   }, 2000);
+}());
 
-
+(function(){
   //smooth Scrolling
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -44,7 +46,7 @@
       }
     }
   });
-
+}());
 
 
 /*
