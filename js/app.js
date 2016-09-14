@@ -20,13 +20,16 @@
   var icon = $('.go-up');
   icon.hide();
 
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 500) {
-      icon.fadeIn('ease-in');
-    } else {
-      icon.fadeOut('ease-out');
-    }
-  });
+  setInterval(function(){
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 500) {
+        icon.fadeIn('ease-in');
+      } else {
+        icon.fadeOut('ease-out');
+      }
+    });
+  }, 500);
+
 
   //smooth Scrolling
   $('a[href*="#"]:not([href="#"])').click(function() {
