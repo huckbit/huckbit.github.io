@@ -582,6 +582,10 @@ th {
     font-size: 5em;
     margin-top: 7%;
     //breakpoint mobile
+      @include breakpoint($tablet){
+        font-size: 4.3em;
+      }
+    //breakpoint mobile
       @include breakpoint($mobile){
         font-size: 1.5em;
         margin-top: 15%;
@@ -685,6 +689,10 @@ th {
   h2 {
     margin: 0;
     line-height: 1.8em;
+    //breakpoint mobile
+      @include breakpoint($tablet){
+        font-size: 2.6em;
+      }
   }
 
   //related-post__list
