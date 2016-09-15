@@ -2,7 +2,8 @@
 //   Theme variables
 // -------------------------------------
 
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900|Radley);
+//@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900|Radley);
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400,700|Playfair+Display:400,700';
 @font-face {
     font-family: 'Bebas';
     src: url('../public/fonts/bebas-webfont.woff2') format('woff2'),
@@ -12,7 +13,9 @@
 }
 
 $firstFontStyle: 'Playfair Display',fontAwesome, Helvetica, Arial, sans-serif;
-$secondFontStyle: 'Bebas', fontAwesome, Helvetica, Arial, sans-serif;
+// $secondFontStyle: 'Oswald', fontAwesome, Helvetica, Arial, sans-serif;
+$secondFontStyle: 'Oswald', fontAwesome, Arial, sans-serif;
+
 
 //breakpoint viewport
 $mobile: 320px 767px;
@@ -415,6 +418,8 @@ th {
   //post-loop__title
   @include element('title'){
     font-family: $secondFontStyle;
+    font-weight: 700;
+    text-transform: uppercase;
     color: $sitecol-3;
     margin-bottom: 18px;
     font-size: 3em;
@@ -783,10 +788,14 @@ footer{
     position: absolute;
     text-decoration: none;
     font-family: $secondFontStyle;
+    font-weight: 700;
+    text-transform: uppercase;
     font-size: 1em;
     padding: 5%;
-    top: 12px;
-    left: 10px;
+    // top: 12px;
+    // left: 10px;
+    top: 13px;
+    left: 7px;
     color: $white;
     transform-origin: center center;
     line-height: 1.2;
