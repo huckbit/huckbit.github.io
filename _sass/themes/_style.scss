@@ -174,8 +174,8 @@ th {
     padding: 7px 0px 7px 15px;
     margin-top: 0;
     font-family: $secondFontStyle;
-    text-transform: capitalize;
-    font-size: 1em;
+    text-transform: inherit;
+    font-size: 1.4em;
     transition: all 500ms ease;
     a {
       display: block; //for having full hover state on sidebar items
@@ -241,6 +241,7 @@ th {
 .social-side-nav {
   margin-top: 20%;
   margin-left: 3%;
+  position: absolute;
   //breakpoint mobile -- version one
     // @include breakpoint($mobile){
     //   text-align: center;
@@ -254,29 +255,30 @@ th {
   @include element('item'){
     padding-right: 5px;
     font-size: 1.2em;
+
     //social-side-nav__item--last
     @include modifier('last'){
       padding-right: 0;
     }
-    @include modifier('separator'){
-      border-top: 8px solid $sitecol-3;
-      position: relative;
-      width: 55%;
-      left: -2px;
-      //breakpoint mobile
-        @include breakpoint($mobile){
-          padding-top: 10%;
-          width: 100%;
-          left: -5px;
-        }
-    }
-    @include modifier('description'){
-      color: $sitecol-3;
-      font-size: .8em;
-      font-family: $secondFontStyle;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
+  }
+  @include element('separator'){
+    border-top: 8px solid $sitecol-3;
+    position: relative;
+    width: 100%;
+    left: 0;
+    //breakpoint mobile
+      @include breakpoint($mobile){
+        padding-top: 10%;
+        width: 100%;
+        left: -5px;
+      }
+  }
+  @include element('description'){
+    color: $sitecol-3;
+    font-size: 1em;
+    font-family: $secondFontStyle;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 }
 .link--white-social {
