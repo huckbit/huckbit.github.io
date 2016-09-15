@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FontAwsome and placeholders"
-subtitle:  "Fontawesome icons inside a palaceholder"
+subtitle:  "Fontawesome icons inside a placeholder"
 author:
   display_name: huckbit
   login: huckbit
