@@ -11,7 +11,7 @@ date:   2016-04-22 14:00:00 +0100
 categories: webdev
 tags: fontAwesome css input font
 ---
-This is one way to use fontAwesome icons inside a palaceholder.
+This is one way to use fontAwesome icons inside a placeholder.
 
 In the CSS you have to use this code for the class fontAwesome:
 
