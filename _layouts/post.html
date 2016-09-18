@@ -14,6 +14,14 @@ layout: default
     <div class="post__content">
       {{ content }}
     </div>
+    <div class="tags">
+      <ul class="list--unstyled">
+        <span>Tags:</span>
+        {% for tag in page.tags %}
+          <li class="list--inline"><a class="link tags__item" href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 
 <!-- <div class="categories">
@@ -21,6 +29,7 @@ layout: default
     categories:<a href="{{page.categories}}">{{page.categories}}</a>
     tags: <a href="">{{page.tags}}</a></p>
 </div> -->
+
 
 <div class="get-in-touch">
   <p>

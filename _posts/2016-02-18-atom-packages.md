@@ -9,7 +9,7 @@ author:
   url: http://www.huckbit.com
 date:   2016-02-18 18:00:00 +0100
 categories: webdev
-tags: atom ide atom-packages
+tags: atom ide
 ---
 You can’t miss this packages in your atom ide configuration:
 
