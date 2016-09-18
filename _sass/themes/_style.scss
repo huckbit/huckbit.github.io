@@ -662,6 +662,9 @@ th {
       content: " ]";
     }
   }
+  @include breakpoint($mobile){
+    font-size: .6em;
+  }
 }
 
 //section for buttons share-to-social
@@ -675,6 +678,10 @@ th {
   font-size: 1em;
   vertical-align: -3px;
   margin-right: 1px;
+  //breakpoint mobile
+  @include breakpoint($mobile){
+    font-size: .7em;
+  }
 }
 
 .twitter-share-button {
@@ -768,10 +775,18 @@ th {
   @include element('title'){
     text-transform: uppercase;
     margin-bottom: 2px;
+    //breakpoint mobile
+    @include breakpoint($mobile){
+      font-size: 1.5em;
+    }
   }
   //.tag-content__post-list
   @include element('post-list'){
     font-family: $firstFontStyle;
+    //breakpoint mobile
+    @include breakpoint($mobile){
+      font-size: .8em;
+    }
   }
 }
 

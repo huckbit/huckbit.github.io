@@ -26,7 +26,7 @@ to the `site_tags` variable. -->
 </ul>
 
 <!-- Posts by Tag -->
-<div class="tag-page-content">
+<div class="tag-page-content text--left">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <h2 class="tag-page-content__title" id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
