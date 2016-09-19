@@ -550,6 +550,10 @@ th {
         font-size: 2em;
         margin-bottom: 10%;
       }
+    //breakpoint tablet
+      @include breakpoint($tablet){
+        font-size: 3.7em;
+      }
   }
   @include element('content'){
     //breakpoint mobile
