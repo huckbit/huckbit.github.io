@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tags
+order: 4
 description: Tags list page
 ---
 
