@@ -757,15 +757,14 @@ th {
    tags page style
   ============================================================= */
 .tag-word{
-  &::before, &::after{
-    color: $sitecol-2;
-  }
-  &::before {
-    content:"[";
-  }
-  &::after {
-    content: "]";
-  }
+  background: $whiteflat;
+  color: $sitecol-2;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: .6em;
+  border-radius: 5px;
+  white-space: nowrap;
 }
 .tag-page-content{
   color: $sitecol-2;
