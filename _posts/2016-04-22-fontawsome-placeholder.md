@@ -9,7 +9,7 @@ author:
   url: http://www.huckbit.com
 date:   2016-04-22 14:00:00 +0100
 categories: webdev
-tags: fontAwesome css input font
+tags: [fontAwesome, css, font]
 ---
 This is one way to use fontAwesome icons inside a placeholder.
 

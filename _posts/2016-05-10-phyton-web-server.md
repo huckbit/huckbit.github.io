@@ -9,6 +9,7 @@ author:
   url: http://www.huckbit.com
 date:   2016-05-10 19:00:00 +0100
 categories: osx
+tags: [osx, phyton]
 ---
 If you are on linux / OSX or inside a phyton environment you can start a web server on the fly simply recalling an alias from the terminal in your project folder.
 

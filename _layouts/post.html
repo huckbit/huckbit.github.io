@@ -18,7 +18,7 @@ layout: default
       <ul class="list--unstyled">
         <span>Tags:</span>
         {% for tag in page.tags %}
-          <li class="list--inline"><a class="link tags__item" href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+          <li class="list--inline tag-word">&#xf02b; <a class="link" href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
         {% endfor %}
       </ul>
     </div>

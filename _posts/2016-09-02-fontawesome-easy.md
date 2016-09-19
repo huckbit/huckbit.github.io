@@ -9,7 +9,7 @@ author:
   url: http://www.huckbit.com
 date:   2016-09-02 16:00:00 +0100
 categories: webdev
-tags: fontAwesome css icons fonts
+tags: [fontAwesome, css, font]
 ---
 Personally I really like [FontAwesome](http://fontawesome.io/): it is really helpful! The canonical method, according to the [official documentation](http://fontawesome.io/examples/), is this:
 

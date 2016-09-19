@@ -9,7 +9,7 @@ author:
   url: http://www.huckbit.com
 date:   2016-04-26 18:00:00 +0100
 category: osx
-tags: [osx, style, bash]
+tags: [osx, bash]
 ---
 If you are using OSX this is wonderful because you can customise your command line by adding emoji icons to the bash prompt.
 

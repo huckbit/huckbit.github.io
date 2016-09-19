@@ -645,25 +645,15 @@ th {
   }
 }
 
+//style for tag inside post page
 .tags {
   margin-bottom: 8%;
   span{
     font-family: $secondFontStyle;
     font-weight: 700;
   }
-  @include element('item'){
-    &:before, &:after{
-      color: $sitecol-2;
-    }
-    &:before{
-      content: "[ "
-    }
-    &:after{
-      content: " ]";
-    }
-  }
   @include breakpoint($mobile){
-    font-size: .6em;
+    font-size: .4em;
   }
 }
 
@@ -759,12 +749,17 @@ th {
 .tag-word{
   background: $whiteflat;
   color: $sitecol-2;
-  margin-bottom: 15px;
+  display: inline-block;
+  margin-bottom: 5px;
   margin-right: 10px;
-  padding: 5px;
+  padding: 0 7px;
   font-size: .6em;
   border-radius: 5px;
   white-space: nowrap;
+  span {
+    font-weight: 700;
+    color: $sitecol-2;
+  }
 }
 .tag-page-content{
   color: $sitecol-2;

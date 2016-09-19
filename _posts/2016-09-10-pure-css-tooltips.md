@@ -9,7 +9,7 @@ author:
   url: http://www.huckbit.com
 date:   YYYY-MM-DD 00:00:00 +0100
 categories: webdev
-tags: data-attribute css tooltip
+tags: [data-attribute, css, tooltip]
 ---
 A lot of web sites use JavaScript to create *tooltip* but is actually **easier with CSS**.
 
