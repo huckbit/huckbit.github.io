@@ -7,7 +7,7 @@ author:
   login: huckbit
   email: info@huckbit.com
   url: http://www.huckbit.com
-date:   YYYY-MM-DD 00:00:00 +0100
+date:   2016-09-10 18:00:00 +0100
 categories: webdev
 tags: [data-attribute, css, tooltip]
 ---

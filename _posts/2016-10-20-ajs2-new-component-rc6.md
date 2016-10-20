@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Components Angular2 RC6"
-subtitle:  "directives are deprecated in Angular2 RC6"
+subtitle:  "directives are deprecated"
 author:
   display_name: huckbit
   login: huckbit
@@ -93,3 +93,9 @@ export class AppModule { }
 ```
 
 Now you can see new component inside the page.
+
+Watch the following video to see how to **create a new component** step by step 
+
+
+
+[![Video-of-new-component](https://gitlab.com/huckbit/blog-images/raw/master/images/VideoComponentAngular.jpg)](https://youtu.be/hj_lIDl4AtQ){: .image--center .video}
