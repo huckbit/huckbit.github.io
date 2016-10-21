@@ -19,15 +19,15 @@ directives : [NameComponent]
 
 inside `@component`.
 
-Now, **directives in Angular2** version RC6 are **deprecated**, and we going to use [NgModule declarations](https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html) instead of `directives`.
+Now, **directives in Angular2** version **RC6** are **deprecated**, and we are going to use [NgModule declarations](https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html) instead of `directives`.
 
-To better understand we going to start form the official [QuickStart](https://angular.io/docs/ts/latest/quickstart.html) @ [Angular.io](https://angular.io/):
+To better understand we are going to start form the official [QuickStart](https://angular.io/docs/ts/latest/quickstart.html) @ [Angular.io](https://angular.io/):
 
 1. Clone the official [Angular.io](https://angular.io/) repo from [github](https://github.com/angular/quickstart/blob/master/README.md).
 2. install with `npm install`
 3. start the server with `npm start`
 
-Now let's **create our new component**, I called mine `new.component.ts` and this is what I have inside it:
+Now let's **create our new component**, I called mine `new.component.ts` and this is what inside:
 
 ```
 import { Component } from '@angular/core';
@@ -42,7 +42,7 @@ export class NewComponent {
 }
 ```
 
-Now inside `app.component.ts` change, inside the template the quotes with [back-ticks](http://quotesandaccents.com/) to have multiple line and add:
+Now, in `app.component.ts` ,change inside the template the quotes with [back-ticks](http://quotesandaccents.com/) to have multiple line and add:
 
 ```
 <new-component>Loading new component ...</new-component>
@@ -70,7 +70,7 @@ Now add to `app.module.ts` after the component’s import:
 import { NewComponent } from './new.component'
 ```
 
-Then inside NgModule in `declarations` add the new component `NewComponent`.
+Then in the NgModule in `declarations` add the new component `NewComponent`.
 
 This is my `app.module.ts`:
 
@@ -92,10 +92,8 @@ import { NewComponent } from './new.component';
 export class AppModule { }
 ```
 
-Now you can see new component inside the page.
+Now you can see the new component inside the page.
 
-Watch the following video to see how to **create a new component** step by step 
-
-
+Watch the following video to see how to create a new component step by step.
 
 [![Video-of-new-component](https://gitlab.com/huckbit/blog-images/raw/master/images/VideoComponentAngular.jpg)](https://youtu.be/hj_lIDl4AtQ){: .image--center .video}
