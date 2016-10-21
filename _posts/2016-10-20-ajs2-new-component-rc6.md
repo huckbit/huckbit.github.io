@@ -9,7 +9,7 @@ author:
   url: http://www.huckbit.com
 date:   2016-10-20 00:00:00 +0100
 categories:
-tags: [Angular2]
+tags: [Angular2, AngularRC6, NgModule, directives]
 ---
 In Angular2 before the [new version](http://angularjs.blogspot.it/2016/09/angular-2-rc6_1.html), released on September 2016, to add a new component we used:
 
