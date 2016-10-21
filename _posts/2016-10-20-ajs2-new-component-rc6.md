@@ -21,7 +21,7 @@ inside `@component`.
 
 Now, **directives in Angular2** version **RC6** are **deprecated**, and we are going to use [NgModule declarations](https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html) instead of `directives`.
 
-To better understand we are going to start form the official [QuickStart](https://angular.io/docs/ts/latest/quickstart.html) @ [Angular.io](https://angular.io/):
+To better understand we are going to start from the official [QuickStart](https://angular.io/docs/ts/latest/quickstart.html) @ [Angular.io](https://angular.io/):
 
 1. Clone the official [Angular.io](https://angular.io/) repo from [github](https://github.com/angular/quickstart/blob/master/README.md).
 2. install with `npm install`
@@ -42,7 +42,7 @@ export class NewComponent {
 }
 ```
 
-Now, in `app.component.ts` ,change inside the template the quotes with [back-ticks](http://quotesandaccents.com/) to have multiple line and add:
+Now, in `app.component.ts` ,change in the template the quotes with [back-ticks](http://quotesandaccents.com/) to have multiple line and add:
 
 ```
 <new-component>Loading new component ...</new-component>
@@ -64,7 +64,7 @@ import { NewComponent } from './new.component'
 export class AppComponent { }
 ```
 
-Now add to `app.module.ts` after the component’s import:
+Now add to `app.module.ts`, after the component’s import:
 
 ```
 import { NewComponent } from './new.component'
@@ -72,7 +72,7 @@ import { NewComponent } from './new.component'
 
 Then in the NgModule in `declarations` add the new component `NewComponent`.
 
-This is my `app.module.ts`:
+This is my final `app.module.ts`:
 
 ```
 import { NgModule }      from '@angular/core';
