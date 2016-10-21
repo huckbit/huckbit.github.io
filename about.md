@@ -10,4 +10,6 @@ Hi, I'm Max and I'm a *web developer*.  I'm working in this area with a lot of p
 
 You can find some of my project on my [github](https://github.com/huckbit) page, or some of my front-end _"pen"_ inside my [codepen](http://codepen.io/huckbit/) page.
 
+I'm also very passionate about photography. Follow my latest shots on [www.massimilianoranauro.com](http://www.massimilianoranauro.com).
+
 Start a conversation ... contact me via twitter [@huckbit](https://twitter.com/@huckbit).
