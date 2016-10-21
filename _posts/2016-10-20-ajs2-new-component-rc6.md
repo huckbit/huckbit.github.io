@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Components Angular2 RC6"
-subtitle:  "directives are deprecated"
+subtitle:  "directives properties are deprecated"
 author:
   display_name: huckbit
   login: huckbit
