@@ -19,7 +19,7 @@ directives : [NameComponent]
 
 inside `@component`.
 
-Now, **directives properties from Angular2** version **RC6** are **deprecated**, and we are going to use [NgModule declarations](https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html) instead of `directives`.
+Now, **directives properties** from **Angular2** version **RC6** are **deprecated**, and we are going to use [NgModule declarations](https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html) instead of `directives`.
 
 To better understand we are going to start from the official [QuickStart](https://angular.io/docs/ts/latest/quickstart.html) @ [Angular.io](https://angular.io/):
 
