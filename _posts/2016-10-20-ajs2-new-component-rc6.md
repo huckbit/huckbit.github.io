@@ -42,7 +42,7 @@ export class NewComponent {
 }
 ```
 
-Now, in `app.component.ts` ,change in the template the quotes with [back-ticks](http://quotesandaccents.com/) to have multiple line and add:
+Now, in `app.component.ts`, change in the template the quotes with [back-ticks](http://quotesandaccents.com/) to have multiple line and add:
 
 ```
 <new-component>Loading new component ...</new-component>
