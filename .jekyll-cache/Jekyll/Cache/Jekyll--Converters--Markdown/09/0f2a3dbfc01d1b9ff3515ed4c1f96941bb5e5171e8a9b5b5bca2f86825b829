@@ -1,0 +1,22 @@
+I"m<p>When you try to connect to a remote server via ssh and you receive the following message:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now <span class="o">(</span>man-in-the-middle attack<span class="o">)!</span>
+It is also possible that a host key has just been changed.
+The fingerprint <span class="k">for </span>the RSA key sent by the remote host is
+SHA256:shacode.
+Please contact your system administrator.
+Add correct host key <span class="k">in</span> /Users/username/.ssh/known_hosts to get rid of this message.
+Offending RSA key <span class="k">in</span> /Users/username/.ssh/known_hosts:21
+RSA host key <span class="k">for </span>IP_ADDRESS has changed and you have requested strict checking.
+Host key verification failed.
+</code></pre></div></div>
+
+<p>you can reset the known_host for the ip_address using the command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-R</span> &lt;<span class="nb">hostname </span>or ip_address&gt;
+</code></pre></div></div>
+:ET

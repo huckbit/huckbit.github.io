@@ -1,0 +1,30 @@
+I"Ï<p>Here a the most used Composer commands:</p>
+
+<h4 id="start-new-php-project">Start new php project:</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer init
+</code></pre></div></div>
+
+<p>####Install a new packages with:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer require packageName
+</code></pre></div></div>
+
+<p>Use https://packagist.org/ to find the exact component name</p>
+
+<p>Get the latest version:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer update Uninstall packages from composer:
+</code></pre></div></div>
+
+<p>composer remove packageName
+Search package from composer:</p>
+
+<p>composer search packageName
+Shows a list of installed packages that have updates available:</p>
+
+<p>composer outdated
+You should always run the validate command before you commit your composer.json file:</p>
+
+<p>composer validate</p>
+:ET

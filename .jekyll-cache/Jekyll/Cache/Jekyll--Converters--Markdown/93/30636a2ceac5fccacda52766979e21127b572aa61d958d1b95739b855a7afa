@@ -1,0 +1,41 @@
+I"Þ<p>Composer is the <em>dependency manager for PHP</em>. The following are the most used commands for composer:</p>
+
+<h4 id="start-new-php-project">Start new php project:</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer init
+</code></pre></div></div>
+
+<h4 id="install-a-new-packages-with">Install a new packages with:</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer require packageName
+</code></pre></div></div>
+
+<p>Use <a href="https://packagist.org/">packagist.org</a> to search for packages</p>
+
+<h4 id="get-the-latest-version">Get the latest version</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer update
+</code></pre></div></div>
+
+<h4 id="uninstall-packages">Uninstall packages:</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer remove packageName
+</code></pre></div></div>
+
+<h4 id="search-packages">Search packages</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer search packageName
+</code></pre></div></div>
+
+<h4 id="shows-a-list-of-installed-packages-that-need-to-be-updated">Shows a list of installed packages that need to be updated:</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer outdated
+</code></pre></div></div>
+
+<p>You should always run the validate command before you commit your composer.json file, and before you tag a release.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer validate
+</code></pre></div></div>
+
+<p>Cli documentation <a href="https://getcomposer.org/doc/03-cli.md">here</a>.</p>
+:ET

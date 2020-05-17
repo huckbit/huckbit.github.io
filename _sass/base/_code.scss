@@ -48,7 +48,10 @@ pre code {
   pre {
     margin-bottom: 0;
     overflow-x: auto;
-    margin-left: -23px;
+  }
+
+  pre.highlight {
+    border-left: none;
   }
 
   .lineno {

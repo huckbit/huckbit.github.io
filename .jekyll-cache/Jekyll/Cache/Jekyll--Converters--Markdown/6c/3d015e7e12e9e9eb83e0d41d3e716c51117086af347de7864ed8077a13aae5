@@ -1,0 +1,581 @@
+I"ª=<!-- Get the tag name for every tag on the site and set them
+to the `site_tags` variable. -->
+
+<!-- `tag_words` is a sorted array of the tag names. -->
+
+<!-- Build the Page -->
+
+<!-- List of all tags -->
+<ul class="list--unstyled">
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#Angular2">Angular2
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#AngularRC6">AngularRC6
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#NgModule">NgModule
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#atom">atom
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#bash">bash
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#cms">cms
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#compression">compression
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#css">css
+        <span> 3</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#data-attribute">data-attribute
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#directives">directives
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#font">font
+        <span> 2</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#fontAwesome">fontAwesome
+        <span> 2</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#ide">ide
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#less">less
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#linux">linux
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#osx">osx
+        <span> 2</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#php">php
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#phyton">phyton
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#server+access">server access
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#ssh">ssh
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#tooltip">tooltip
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#unix">unix
+        <span> 2</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#warning">warning
+        <span> 1</span>
+      </a>
+    </li>
+  
+    
+    <li class="list--inline tag-word">
+      &#xf02b; <a class="tag" href="#wordpress">wordpress
+        <span> 1</span>
+      </a>
+    </li>
+  
+</ul>
+
+<!-- Posts by Tag -->
+<div class="tag-page-content text--left">
+  
+    
+    <h2 class="tag-page-content__title" id="Angular2">Angular2</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2016/10/20/ajs2-new-component-rc6.html">Components Angular2 RC6</a></li>
+        </span>
+        <span style="float: right;">
+          20 Oct 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="AngularRC6">AngularRC6</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2016/10/20/ajs2-new-component-rc6.html">Components Angular2 RC6</a></li>
+        </span>
+        <span style="float: right;">
+          20 Oct 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="NgModule">NgModule</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2016/10/20/ajs2-new-component-rc6.html">Components Angular2 RC6</a></li>
+        </span>
+        <span style="float: right;">
+          20 Oct 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="atom">atom</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/02/18/atom-packages.html">Atom packages</a></li>
+        </span>
+        <span style="float: right;">
+          18 Feb 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="bash">bash</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/osx/2016/04/26/customise-bash-prompt.html">Bash style</a></li>
+        </span>
+        <span style="float: right;">
+          26 Apr 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="cms">cms</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2018/04/04/install-wordpress-whitout-ftp.html">Wordpress updates in local environment</a></li>
+        </span>
+        <span style="float: right;">
+          04 Apr 2018
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="compression">compression</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2015/05/28/less.html">less notes</a></li>
+        </span>
+        <span style="float: right;">
+          28 May 2015
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="css">css</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/09/10/pure-css-tooltips.html">CSS Tooltips</a></li>
+        </span>
+        <span style="float: right;">
+          10 Sep 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/09/02/fontawesome-easy.html">fontAwesome easy</a></li>
+        </span>
+        <span style="float: right;">
+          02 Sep 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/04/22/fontawsome-placeholder.html">FontAwsome and placeholders</a></li>
+        </span>
+        <span style="float: right;">
+          22 Apr 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="data-attribute">data-attribute</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/09/10/pure-css-tooltips.html">CSS Tooltips</a></li>
+        </span>
+        <span style="float: right;">
+          10 Sep 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="directives">directives</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2016/10/20/ajs2-new-component-rc6.html">Components Angular2 RC6</a></li>
+        </span>
+        <span style="float: right;">
+          20 Oct 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="font">font</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/09/02/fontawesome-easy.html">fontAwesome easy</a></li>
+        </span>
+        <span style="float: right;">
+          02 Sep 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/04/22/fontawsome-placeholder.html">FontAwsome and placeholders</a></li>
+        </span>
+        <span style="float: right;">
+          22 Apr 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="fontAwesome">fontAwesome</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/09/02/fontawesome-easy.html">fontAwesome easy</a></li>
+        </span>
+        <span style="float: right;">
+          02 Sep 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/04/22/fontawsome-placeholder.html">FontAwsome and placeholders</a></li>
+        </span>
+        <span style="float: right;">
+          22 Apr 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="ide">ide</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/02/18/atom-packages.html">Atom packages</a></li>
+        </span>
+        <span style="float: right;">
+          18 Feb 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="less">less</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2015/05/28/less.html">less notes</a></li>
+        </span>
+        <span style="float: right;">
+          28 May 2015
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="linux">linux</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2015/05/28/less.html">less notes</a></li>
+        </span>
+        <span style="float: right;">
+          28 May 2015
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="osx">osx</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/osx/2016/05/10/phyton-web-server.html">Phython web server</a></li>
+        </span>
+        <span style="float: right;">
+          10 May 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/osx/2016/04/26/customise-bash-prompt.html">Bash style</a></li>
+        </span>
+        <span style="float: right;">
+          26 Apr 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="php">php</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2018/04/04/install-wordpress-whitout-ftp.html">Wordpress updates in local environment</a></li>
+        </span>
+        <span style="float: right;">
+          04 Apr 2018
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="phyton">phyton</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/osx/2016/05/10/phyton-web-server.html">Phython web server</a></li>
+        </span>
+        <span style="float: right;">
+          10 May 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="server+access">server access</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2018/04/04/Warning.html">WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</a></li>
+        </span>
+        <span style="float: right;">
+          04 Apr 2018
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="ssh">ssh</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2018/04/04/Warning.html">WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</a></li>
+        </span>
+        <span style="float: right;">
+          04 Apr 2018
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="tooltip">tooltip</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/webdev/2016/09/10/pure-css-tooltips.html">CSS Tooltips</a></li>
+        </span>
+        <span style="float: right;">
+          10 Sep 2016
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="unix">unix</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2018/04/04/Warning.html">WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</a></li>
+        </span>
+        <span style="float: right;">
+          04 Apr 2018
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2015/05/28/less.html">less notes</a></li>
+        </span>
+        <span style="float: right;">
+          28 May 2015
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="warning">warning</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2018/04/04/Warning.html">WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!</a></li>
+        </span>
+        <span style="float: right;">
+          04 Apr 2018
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+    
+    <h2 class="tag-page-content__title" id="wordpress">wordpress</h2>
+    
+      <div>
+        <span style="float: left;">
+        <li class="list--inline tag-page-content__post-list"><a href="/2018/04/04/install-wordpress-whitout-ftp.html">Wordpress updates in local environment</a></li>
+        </span>
+        <span style="float: right;">
+          04 Apr 2018
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    
+  
+</div>
+:ET

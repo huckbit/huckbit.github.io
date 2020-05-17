@@ -7,7 +7,7 @@ author:
   login: huckbit
   email: info@huckbit.com
   url: http://www.huckbit.com
-date:   YYYY-MM-DD 00:00:00 +0100
+date:   YYYY-MM-DD 00:00:00 +0000
 categories:
 tags: []
 ---
