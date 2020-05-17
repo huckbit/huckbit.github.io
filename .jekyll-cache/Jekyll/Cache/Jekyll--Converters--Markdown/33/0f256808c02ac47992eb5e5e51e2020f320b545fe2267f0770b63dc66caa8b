@@ -1,0 +1,7 @@
+I"Í<p>If youâ€™re using wordpress in a local environment and you want update the wordpress version without to enable ftp you can add to the wordpress config file <code class="highlighter-rouge">wp-config.php</code> with this setup:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">define</span><span class="p">(</span><span class="s1">'FS_METHOD'</span><span class="p">,</span> <span class="s1">'direct'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Note: you must have permission to write in the wordpress folder. Using LAMP server make sure you have the user in the same group of <code class="highlighter-rouge">www-data</code>.</p>
+:ET

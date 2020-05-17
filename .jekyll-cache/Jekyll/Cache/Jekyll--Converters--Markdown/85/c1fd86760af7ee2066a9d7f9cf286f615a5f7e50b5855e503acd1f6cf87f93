@@ -1,0 +1,14 @@
+I"´<p>You canâ€™t miss this packages in your atom ide configuration:</p>
+
+<ul>
+  <li><strong>emmet</strong>: to improve HTML and CSS work flow - <a href="http://emmet.io/">emmet.io</a></li>
+  <li><strong>sublime style column selection</strong>: this is great! This tool is for vertical selection with<code class="highlighter-rouge">alt+click+drag</code>inside <em>atom</em> as you can do in <em>sublime text</em> - <a href="https://atom.io/packages/Sublime-Style-Column-Selection">plugin page</a></li>
+  <li><strong>file-icons</strong>: the icons for each file type inside left sidebar - <a href="https://atom.io/packages/file-icons">plugin page</a></li>
+  <li><strong>atom-preview-html</strong>: you can have a little browser preview pressing <code class="highlighter-rouge">CTRL+SHIFT+M</code> - <a href="https://atom.io/packages/atom-html-preview">plugin page</a></li>
+  <li><strong>open-in-browser</strong>: open in your browser with right click on file and <em>open in browser</em> - <a href="https://atom.io/packages/open-in-browser">plugin page</a></li>
+  <li><strong>minimap</strong>: a preview of the full source code sublime style - <a href="https://atom.io/packages/minimap">plugin page</a></li>
+  <li><strong>pigments</strong>: a package to display colors in project and files - <a href="https://atom.io/packages/pigments">plugin page</a></li>
+</ul>
+
+<p>Which packages do you love to use in your workflow? Let me know, leave a comment down below!</p>
+:ET

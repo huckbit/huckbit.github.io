@@ -1,0 +1,52 @@
+I"<p>Personally I really like <a href="http://fontawesome.io/">FontAwesome</a>: it is really helpful! The canonical method, according to the <a href="http://fontawesome.io/examples/">official documentation</a>, is this:</p>
+
+<ol>
+  <li id="point-one">link the <a href="https://cdnjs.com/libraries/font-awesome">CDN</a> or the file in you asset as a css library link</li>
+  <li>use inside the html the <code class="highlighter-rouge">i</code> tag:</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;i&gt;fa fa-something-code&lt;/i&gt;
+</code></pre></div></div>
+
+<p>and it is done!</p>
+
+<p>But …</p>
+
+<p>What if you have a lot icons to insert inside your project? Could be boring to death using over and over again the<code class="highlighter-rouge">i</code>tag inside the<code class="highlighter-rouge">html</code>! For this reason I love to use this <em>“easy way”</em>:</p>
+
+<ul>
+  <li>do the same as the step <a href="#step-one">number one</a></li>
+  <li>insert in your<code class="highlighter-rouge">body tag</code>the code below (you may use a different font inside each class):</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>font-family: 'your-favourite-font', fontAwesome, sans-serif;
+</code></pre></div></div>
+
+<ul>
+  <li>use the <strong>cheatsheet code</strong> with format<code class="highlighter-rouge">&amp;#xf015;</code>needed that you can get from <a href="http://fontawesome.io/cheatsheet/"> cheatsheet code list</a>. Add in your html and you will get the same result.</li>
+</ul>
+
+<p>For example if I have to add some icons to my menu I can do that in my html:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="nav simple-way"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&amp;#xf015; Home&lt;/li&gt;
+    &lt;li&gt;&amp;#xf007; About me&lt;/li&gt;
+    &lt;li&gt;&amp;#xf040; Contact me&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>and I only need the previous code inside my css:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>font-family: 'you-favourite-font', fontAwesome, sans-serif;
+</code></pre></div></div>
+<p>And is done as you can see in my following pen:</p>
+
+<p data-height="300" data-theme-id="24562" data-slug-hash="yaLjLo" data-default-tab="result" data-user="huckbit" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/huckbit/pen/yaLjLo/">An easy way to use fontAwesome</a> by Massimiliano Ranauro (<a href="http://codepen.io/huckbit">@huckbit</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>isn’t it really cool?</p>
+
+<p>Do you like this methodology or you have some other tip to share?</p>
+:ET

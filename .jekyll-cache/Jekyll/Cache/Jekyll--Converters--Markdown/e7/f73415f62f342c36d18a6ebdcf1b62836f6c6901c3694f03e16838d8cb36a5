@@ -1,0 +1,20 @@
+I"}<p><a href="https://huckbit.github.com">huckbit blog site</a> is based on <a href="https://jekyllrb.com/">Jekyll</a> and wears a custom theme created by <a href="/about/">Massimiliano Ranauro</a>.</p>
+
+<p>What I used to create this theme and blog site:</p>
+
+<ul class="text--left">
+  <li>Engine: <a href="https://jekyllrb.com/">Jekyll</a> … off course!</li>
+  <li>Hosting: <a href="http://github.io">github.io</a> - <a href="http://huckbit.github.io">huckbit.github.io</a></li>
+  <li>My <a href="http://style.huckbit.com">sass style framework</a> cloned from my repository on <a href="https://github.com/huckbit/sass">github</a></li>
+  <li>Maintainable code using <a href="https://en.bem.info/">BEM</a> methodology</li>
+  <li>Custom grid created using: <a href="http://susy.oddbird.net/">susy</a></li>
+  <li>Helper for responsive design: <a href="http://breakpoint-sass.com/">breakpoint-sass</a></li>
+  <li>Icons: <a href="http://breakpoint-sass.com/">fontAwesome</a></li>
+  <li>Ide: <a href="https://atom.io/">atom</a> with <a href="http://emmet.io/">emmet</a> and others <a href="https://huckbit.github.io/webdev/2016/02/18/atom-packages.html">cool packages</a></li>
+  <li>Online ide: <a href="http://codepen.io/huckbit/">codepen</a> for trying some animations</li>
+  <li>Terminal: <a href="https://www.iterm2.com/">iTerm2</a> with <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a> on mac mini / mac book pro retina</li>
+  <li>Coffee: espresso with Nespresso machine most of the time … but also americano from coffee beans</li>
+  <li>Music: <a href="http://www.marconiunion.com/">Marconi Union</a> / <a href="https://open.spotify.com/album/7bBlW6L9r3ICFkbf2WRDXL">Game of Thrones</a> soundtrack / <a href="http://www.mastodonrocks.com/">Mastodon</a></li>
+  <li>Location: my lovely house in <a href="https://www.instagram.com/p/BKFZVzMgJe9/?taken-by=huckbit">Cowes - Isle of Wight</a></li>
+</ul>
+:ET

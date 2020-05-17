@@ -1,0 +1,39 @@
+I"]<h1 id="less-command">less command.</h1>
+
+<p>The keys in <code class="highlighter-rouge">less</code> are similar to <code class="highlighter-rouge">Vim</code>:</p>
+
+<h4 id="forward-search">Forward Search</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/ – search <span class="k">for </span>a pattern which will take you to the next occurrence.
+n – <span class="k">for </span>next match <span class="k">in </span>forward
+N – <span class="k">for </span>previous match <span class="k">in </span>backward
+</code></pre></div></div>
+
+<h4 id="backward-search">Backward Search</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>? – search <span class="k">for </span>a pattern which will take you to the previous occurrence.
+n – <span class="k">for </span>next match <span class="k">in </span>backward direction
+N – <span class="k">for </span>previous match <span class="k">in </span>forward direction
+</code></pre></div></div>
+
+<h4 id="to-navigate-in-large-files">To navigate in large files</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CTRL+F – forward one window
+CTRL+B – backward one window
+CTRL+D – forward half window
+CTRL+U – backward half window
+j – navigate forward by one line
+k – navigate backward by one line
+G – go to the end of file
+g – go to the start of file
+q or ZZ – <span class="nb">exit </span>the less pager
+</code></pre></div></div>
+
+<h4 id="other-useful-options">Other useful options</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>v – using the configured editor edit the current file.
+h – summary of less commands
+&amp;pattern – display only the matching lines, not all.
+</code></pre></div></div>
+
+<h4 id="file-paging">File paging</h4>
+<p>You can open multiple files passing the file names as arguments:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>less file1 file2
+</code></pre></div></div>
+:ET

@@ -1,0 +1,28 @@
+I"#<p>This is one way to use fontAwesome icons inside a placeholder.</p>
+
+<p>In the CSS you have to use this code for the class fontAwesome:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.fontAwesome {
+font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+</code></pre></div></div>
+
+<p>After that in the HTML you have to add the <strong>fontawesome class</strong> first and then the <strong>fontawesome icon code</strong> inside the placeholder:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;input class="fontAwesome" name="emailAddress" type="text" placeholder="[insert-fa-code-here;] insert email address ..." /&gt;
+</code></pre></div></div>
+<p>and it’s done!!!</p>
+
+<p>You can simply apply the class every time inside your input with the relative code in the placeholder.</p>
+
+<p>And even more, you can use this method by entering the code into a generic element such as a link or a simple text using the same class “fontAwesome” used for the placeholder:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="fontAwesome" href="#"&gt;[insert-fa-code-here;] Great job!!!&lt;/a&gt;
+</code></pre></div></div>
+
+<p>You can see the result or read the post from my <a href="http://codepen.io/huckbit/post/fontawesomeplaceholder">codePen</a> post.</p>
+
+<p data-height="300" data-theme-id="24562" data-slug-hash="rezezb" data-default-tab="result" data-user="huckbit" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/huckbit/pen/rezezb/">FontAwesome and placeholders</a> by Massimiliano Ranauro (<a href="http://codepen.io/huckbit">@huckbit</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+:ET

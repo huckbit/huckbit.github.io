@@ -1,0 +1,83 @@
+I"I<p>In Angular2 before the <a href="http://angularjs.blogspot.it/2016/09/angular-2-rc6_1.html">new version</a>, released on September 2016, to add a new component we used:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>directives : [NameComponent]
+</code></pre></div></div>
+
+<p>inside <code class="highlighter-rouge">@component</code>.</p>
+
+<p>Now, <strong>directives properties</strong> from <strong>Angular2</strong> version <strong>RC6</strong> are <strong>deprecated</strong>, and we are going to use <a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html">NgModule declarations</a> instead of <code class="highlighter-rouge">directives</code>.</p>
+
+<p>To better understand we are going to start from the official <a href="https://angular.io/docs/ts/latest/quickstart.html">QuickStart</a> @ <a href="https://angular.io/">Angular.io</a>:</p>
+
+<ol>
+  <li>Clone the official <a href="https://angular.io/">Angular.io</a> repo from <a href="https://github.com/angular/quickstart/blob/master/README.md">github</a>.</li>
+  <li>install with <code class="highlighter-rouge">npm install</code></li>
+  <li>start the server with <code class="highlighter-rouge">npm start</code></li>
+</ol>
+
+<p>Now let’s <strong>create our new component</strong>, I called mine <code class="highlighter-rouge">new.component.ts</code> and this is what inside:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { Component } from '@angular/core';
+
+@Component({
+    selector: 'new-component',
+    template: `&lt;h1&gt;&lt;/h1&gt;`
+})
+
+export class NewComponent {
+    title = "this is the new component"
+}
+</code></pre></div></div>
+
+<p>Now, in <code class="highlighter-rouge">app.component.ts</code>, change in the template the quotes with <a href="http://quotesandaccents.com/">back-ticks</a> to have multiple line and add:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;new-component&gt;Loading new component ...&lt;/new-component&gt;
+</code></pre></div></div>
+
+<p>This is my final <code class="highlighter-rouge">app.component.ts</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { Component }  from '@angular/core';
+import { NewComponent } from './new.component'
+
+@Component({
+    selector: 'my-app',
+    template: `
+    &lt;h1&gt;My First Angular App&lt;/h1&gt;
+    &lt;new-component&gt;Loading new component ...&lt;/new-component&gt;
+    `
+})
+export class AppComponent { }
+</code></pre></div></div>
+
+<p>Now add to <code class="highlighter-rouge">app.module.ts</code>, after the component’s import:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { NewComponent } from './new.component'
+</code></pre></div></div>
+
+<p>Then in the NgModule in <code class="highlighter-rouge">declarations</code> add the new component <code class="highlighter-rouge">NewComponent</code>.</p>
+
+<p>This is my final <code class="highlighter-rouge">app.module.ts</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent }  from './app.component';
+import { NewComponent } from './new.component';
+
+@NgModule({
+  imports: [ BrowserModule ],
+  declarations: [
+    AppComponent,
+    NewComponent
+    ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+</code></pre></div></div>
+
+<p>Now you can see the new component inside the page.</p>
+
+<p>Watch the following video to see how to create a new component step by step.</p>
+
+<p><a href="https://youtu.be/hj_lIDl4AtQ" class="image--center video"><img src="https://gitlab.com/huckbit/blog-images/raw/master/images/VideoComponentAngular.jpg" alt="Video-of-new-component" /></a></p>
+:ET

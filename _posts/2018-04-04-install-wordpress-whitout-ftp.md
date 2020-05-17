@@ -17,4 +17,4 @@ If you're using wordpress in a local environment and you want update the wordpre
 define('FS_METHOD', 'direct');
 ```
 
-:warning: Note: you must have permission to write in the wordpress folder. Using LAMP server make sure you have the user in the same group of `www-data`.
+Note: you must have permission to write in the wordpress folder. Using LAMP server make sure you have the user in the same group of `www-data`.
