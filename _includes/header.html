@@ -6,9 +6,16 @@
     <title>{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="u3eU52k_yTd6zb4j1xa5xk9S7LISNIbP6-7PQcTwbuc" />
-    <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    {% if page.subtitle %}
+      <meta name="description" content="{{ page.subtitle | escape }}">
+      {% else %}
+      <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    {%if page.tags %}
+      <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}" />
+    {%endif %}
 </head>
 
 <body>

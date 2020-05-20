@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: huckbit blog site
+title: huckbit blog
 name: huckbit
 email: info@huckbit.com
 description: > # this means to ignore newlines until "baseurl:"
-  Massimiliano Ranauro: front-end developer, CSS fan and and photography addicted. Contact me on twitter via @huckbit
+  huckbit blog by Max Ranauro <Web developer>. Contact me on twitter via @huckbit
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: huckbit
@@ -28,7 +28,6 @@ github_username:  huckbit
 markdown: kramdown
 
 plugins: [jekyll-paginate]
-
 
 #setup
 paginate: 3
