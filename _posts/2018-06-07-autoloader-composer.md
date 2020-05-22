@@ -7,7 +7,7 @@ author:
   login: huckbit
   email: info@huckbit.com
   url: http://www.huckbit.com
-date:   YYYY-MM-DD 00:00:00 +0000
+date:   2019-06-07 16:00:00 +0000
 categories:
 tags: [php, autoloader, composer, autoload, prs-4]
 ---
