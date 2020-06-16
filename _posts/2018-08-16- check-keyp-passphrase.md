@@ -12,9 +12,9 @@ categories:
 tags: [ubuntu, linux, ssh]
 ---
 
-How can we check the passphrase of a private key?
+How can we check the  private key passphrase?
 
-Use following command:
+Use the following command:
 
 ```bash
 ssk-keygen -y 
