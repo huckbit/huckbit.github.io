@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "TP-Link AC1200 up and running on ubuntu 18.xx"
+subtitle:  "How to install TP-Link AC1200 on Ubuntu"
+author:
+  display_name: huckbit
+  login: huckbit
+  email: info@huckbit.com
+  url: http://www.huckbit.com
+date:   2018-09-19 18:00:00 +0000
+categories:
+tags: [TP-Link AC1200, ubuntu, linux, wifi dongle]
+---
+
+Finally I got from Amazon this fast wifi dongle that’s working also with Ubuntu 18.04. The TP-link AC1200(T4UH) doesn’t come up with plug and play functionality but the driver is very easy to install on Ubuntu and Debian distributions.
+The dongle is based on the [RealteK RTL8812AU](https://www.realtek.com/zh-tw/products/productsView.aspx?Langid=1&PFid=57&Level=5&Conn=4&ProdID=397) chipset, and luckly this driver it’s already present on the official repository. All you need to do it’s launch this command from you terminal to install it:
+
+```bash
+sudo apt install rtl8812au-dkms
+```
+
+plug in your device and it should be ready to connect to the WIFI!
