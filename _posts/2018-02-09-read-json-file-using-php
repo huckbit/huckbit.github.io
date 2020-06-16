@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "Read a JSON file uisng php"
+subtitle: "Json file, how to read it using php?"
+author:
+  display_name: huckbit
+  login: huckbit
+  email: info@huckbit.com
+  url: http://www.huckbit.com
+date:   2018-02-09 15:00:00 +0000
+categories:
+tags: [file_get_contents, JSON, json_decode, php and json, read json]
+---
+Get JSON content using [file_get_contents](https://www.php.net/file_get_contents)
+
+To get the data from a url:
+
+``` php
+$jsonData = file_get_contents('https://www.example.com/data/dataset.JSON');
+```
+
+To get the data from the filesystem:
+
+
+```php
+$config = file_get_contents(__DIR__ . '/config.json');
+```
+
+To decode the JSON data we can use [json_decode](https://www.php.net/manual/en/function.json-decode.php):
+
+```php
+$data = json_decode($config, true);
+```
+
+Use `var_dump` or `print_r` to understand the data structure. Having this data:
+
+```JSON
+{
+  "databaseOne": {
+    "dbhost": "localhost:8889",
+    "dbname": "dev_db_1",
+    "dbusername": "root",
+    "dbpassword": "root"
+  },
+  "databaseTwo": {
+    "dbhost": "localhost:8889",
+    "dbname": "dev_db_2",
+    "dbusername": "root",
+    "dbpassword": "root"
+  }
+}
+```
+
+To print for example the database name of `databaseOne`:
+```php
+echo $data['databaseOne']['dbname'];
+```
+
+To loop through the array:
+```php
+foreach ($data['databaseOne'] as $field => $value) {
+    echo $field . ':' . $value . '</br>';
+}```
+
+This following example to shows how to print the database name for each entry:
+```php
+foreach ($$data as $content) {
+	if($content) {
+		foreach ($content as $key => $value) {
+		if ($key === 'dbname'){
+			echo ($value . '</br>');
+			}
+		}
+	}
+}
+```
